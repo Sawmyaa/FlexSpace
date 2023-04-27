@@ -11,8 +11,9 @@ const Signup = () => {
           className="p-5 bg-image"
           style={{
             backgroundImage:
-              'url("/Signup.jpeg")',
-            height: 350
+              'url("/Signup2.jpg")',
+            height: "350px",
+            
           }}
         />
         {/* Background image */}
@@ -21,10 +22,11 @@ const Signup = () => {
           style={{
             marginTop: "-100px",
             background: "hsla(0, 0%, 100%, 0.8)",
-            backdropFilter: "blur(30px)"
+            
+            backdropFilter: "blur(5px)"
           }}
         >
-          <div className="card-body py-5 px-md-5">
+          <div className="card-body py-5 px-md-4">
             <div className="row d-flex justify-content-center">
               <div className="col-lg-8">
                 <h2 className="fw-bold mb-5">Sign up now</h2>
@@ -145,5 +147,3 @@ const Signup = () => {
 }
 
 export default Signup
-
-
