@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 const Main = () => {
   return (
     <div>
+      <Navbar />
        <Outlet/> {/*this is for child router */}
     </div>
   )
