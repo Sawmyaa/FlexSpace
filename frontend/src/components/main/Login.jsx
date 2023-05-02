@@ -2,6 +2,7 @@ import React from 'react'
 
 
 const Login = () => {
+  
   return (
     <section className="vh-60" style={{ backgroundColor: "#020e2e"}}>
       <div className="container py-5 h-100">
@@ -11,10 +12,10 @@ const Login = () => {
               <div className="row g-0">
                 <div className="col-md-6 col-lg-5 d-none d-md-block mt-6">
                   <img
-                    src="/logo2.jpg"
+                    src="https://i.pinimg.com/564x/f8/e9/53/f8e953bad531762109568bf8b4625956.jpg"
                     alt="login form"
                     className="img-fluid mt-7"
-                    style={{ borderRadius: "1rem 0 0 1rem", height: "75vh", width:"85vw" }}
+                    style={{ borderRadius: "1rem 0 0 1rem", height: "88vh", width:"85vw" }}
                   />
                 </div>
                 <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -38,9 +39,10 @@ const Login = () => {
                           Email address
                         </label>
                         <input
-                          type="email"
-                          id="form2Example17"
-                          className="form-control form-control-lg"
+                         type="email"
+                         id="email"
+                         
+                         className="form-control form-control-lg"
 
                         />
                       </div>
@@ -50,10 +52,10 @@ const Login = () => {
                           Password
                         </label>
                         <input
-                          type="password"
-                          id="password"
-                          className="form-control form-control-lg"
-
+                         type="password"
+                         id="password"
+                         
+                         className="form-control form-control-lg"
                         />
 
                       </div>
