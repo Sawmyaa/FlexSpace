@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&family=Roboto&display=swap');
 
-*{
-  padding: 0;
-  margin: 0;
-  /* box-sizing: border-box; */
-  font-family: 'Poppins', sans-serif;
 
-}
 
 /* Colors and styling */
 :root{
@@ -42,10 +36,10 @@ li{
   padding-right: 1.5rem;
 }
 
-.icon{
+/* .icon{
   font-size: 2rem;
   cursor: pointer;
-}
+} */
 
 .flex{
   display: flex;
@@ -57,22 +51,24 @@ li{
   align-items: center;
 }
 
-.btn{
+.spacebtn{
   padding: .6rem 1.5rem;
   background: var(--gradientColor);
   border-radius: 3rem;
   border: none;
   outline: none;
   cursor: pointer;
-  /* margin-left: 60rem; */
+  margin-left: 56rem;
+  margin-top: .5rem;
+  color: var(--whiteColor);
 }
 
-.btn a{
+.spacebtn a{
   color: var(--whiteColor);
   font-weight: 500;
 }
 
-.btn:hover{
+.spacebtn:hover{
   background: var(--SecondaryColor);
 }
 
