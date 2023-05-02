@@ -1,3 +1,4 @@
+
 import React from 'react'
 import video from '../../Assets/video4.mp4'
 import './home.css'
@@ -46,12 +47,13 @@ const Home = () => {
 
         <div className="searchOptions flex">
         {/* <HiFilter className="icon"/> */}
-        <button>SEARCH</button>
+        <button className='searchbtn'>SEARCH</button>
         </div>
         </div>
 
         {/* Dividers */}
       <section className="text-center">
+  <div className="facilities">
   <div className="row">
     <div className="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
       <i className="fas fa-cubes fa-3x text-primary mb-4" />
@@ -77,10 +79,67 @@ const Home = () => {
       <h6 className="fw-normal mb-0">Plugins</h6>
     </div>
   </div>
+  </div>
 </section>
+
+
+      {/* Gallery */}
+      <>
+  {/* Section: About me */}
+  <section className="mb-10">
+    <div className="container">
+      <div className="row gx-0 align-items-center">
+        {/* First column */}
+        <div className="col-lg-6 mb-5 mb-lg-0">
+          <div className="card rounded-7 me-lg-n5">
+            <div className="card-body p-lg-5 shadow-5">
+              <h2 className="fw-bold">
+                <span className="text-primary">FlexSpace</span>
+              </h2>
+              <p className="fw-bold">
+                <em>“Variety of prices and locations at one place.”</em>
+              </p>
+              <p className="text-muted mb-4">
+                Nunc tincidunt vulputate elit. Mauris varius purus malesuada
+                neque iaculis malesuada. Aenean gravida magna orci, non
+                efficitur est porta id. Donec magna diam.
+              </p>
+              <p className="text-muted">
+                Ad, at blanditiis quaerat laborum officia incidunt cupiditate
+                dignissimos voluptates eius aliquid minus praesentium!
+                Perferendis et totam ipsum ex aut earum libero accusamus
+                voluptas quod numquam saepe, consequuntur nihil quia tenetur
+                consequatur. Quis, explicabo deserunt quasi assumenda ea maiores
+                nulla, et dolor saepe praesentium natus error reiciendis
+                voluptas iste. Esse, laudantium ipsum animi, quos voluptatibus
+                atque vero repellat sit eligendi autem maiores quasi cum
+                aperiam. Aperiam rerum culpa accusantium, ducimus deserunt
+                aliquid alias vitae quasi corporis placeat vel maiores explicabo
+                commodi!
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* First column */}
+        {/* Second column */}
+        <div className="col-lg-6 mb-5 mb-lg-0">
+          <img
+            src="https://i.pinimg.com/564x/75/bb/7a/75bb7ad43a5ce65090276c92d976f863.jpg"
+            className="w-100 rounded-7 shadow-4"
+            alt=""
+          />
+        </div>
+        {/* Second column */}
+      </div>
+    </div>
+  </section>
+  {/* Section: About me */}
+</>
+
 
         {/* Service Section */}
           {/* <h1 className='srv'>SERVICES</h1> */}
+          <div className="services">
         <div className="row row-cols-1 row-cols-md-4 g-3">
   <div className="col">
     <div className="card h-100">
@@ -154,62 +213,58 @@ const Home = () => {
       </div> */}
     </div>
   </div>
-  
+  </div>
 </div>
 
-      {/* Gallery */}
-      <>
-  {/* Section: About me */}
-  <section className="mb-10">
-    <div className="container">
-      <div className="row gx-0 align-items-center">
-        {/* First column */}
-        <div className="col-lg-6 mb-5 mb-lg-0">
-          <div className="card rounded-7 me-lg-n5">
-            <div className="card-body p-lg-5 shadow-5">
-              <h2 className="fw-bold">
-                <span className="text-primary">FlexSpace</span>
-              </h2>
-              <p className="fw-bold">
-                <em>“Variety of prices and locations at one place.”</em>
-              </p>
-              <p className="text-muted mb-4">
-                Nunc tincidunt vulputate elit. Mauris varius purus malesuada
-                neque iaculis malesuada. Aenean gravida magna orci, non
-                efficitur est porta id. Donec magna diam.
-              </p>
-              <p className="text-muted">
-                Ad, at blanditiis quaerat laborum officia incidunt cupiditate
-                dignissimos voluptates eius aliquid minus praesentium!
-                Perferendis et totam ipsum ex aut earum libero accusamus
-                voluptas quod numquam saepe, consequuntur nihil quia tenetur
-                consequatur. Quis, explicabo deserunt quasi assumenda ea maiores
-                nulla, et dolor saepe praesentium natus error reiciendis
-                voluptas iste. Esse, laudantium ipsum animi, quos voluptatibus
-                atque vero repellat sit eligendi autem maiores quasi cum
-                aperiam. Aperiam rerum culpa accusantium, ducimus deserunt
-                aliquid alias vitae quasi corporis placeat vel maiores explicabo
-                commodi!
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* First column */}
-        {/* Second column */}
-        <div className="col-lg-6 mb-5 mb-lg-0">
-          <img
-            src="https://i.pinimg.com/564x/75/bb/7a/75bb7ad43a5ce65090276c92d976f863.jpg"
-            className="w-100 rounded-7 shadow-4"
-            alt=""
-          />
-        </div>
-        {/* Second column */}
-      </div>
-    </div>
-  </section>
-  {/* Section: About me */}
-</>
 
+  {/* Gallery */}
+  <div className="city">
+  <div className="row">
+  <h1 className='cwr'>TOP COWORKING CITIES</h1>
+    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="https://t3.ftcdn.net/jpg/02/67/71/90/240_F_267719012_Kfn3ce4iMX5F69Hgk2zR8gzrOnyBOhjZ.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+      <img
+        src="https://t3.ftcdn.net/jpg/04/01/43/06/240_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+    <div className="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://i.pinimg.com/564x/e0/6a/e2/e06ae29ad41099ced40dc13352370cae.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+      <img
+        src="https://t3.ftcdn.net/jpg/00/50/44/02/240_F_50440279_NjJDH4VfoKnV2jsgXAAonTgWtq5QXKdl.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+    <div className="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://t3.ftcdn.net/jpg/04/76/78/86/240_F_476788612_cgmTI5EvXqrIR2eyj1yWmTHHUDz17v91.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+      <img
+        src="https://t4.ftcdn.net/jpg/05/40/30/71/240_F_540307170_qg8R8Seug9NYJzL7FpbBuW5St0lIyAvv.jpg"
+        className="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  </div>
+  {/* Gallery */}
+
+{/* <>
+<video className="vid" src={video} autoPlay loop muted />
+  <h2 className='name'>FLEXSPACE</h2>
+</> */}
 <>
   {/* First column */}
   <div className="col-lg-6 mb-5 mb-lg-0">
@@ -287,4 +342,12 @@ const Home = () => {
   </div>
   {/* Second column */}
 </>
+
+     </div>
+
+     
+  )
+}
+
+export default Home;
 
