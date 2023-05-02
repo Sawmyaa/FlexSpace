@@ -18,7 +18,7 @@ const Signup = () => {
         />
         {/* Background image */}
         <div
-          className="card mx-4 mx-md-5 shadow-5-strong"
+          className="card1 mx-4 mx-md-5 shadow-5-strong"
           style={{
             marginTop: "-100px",
             background: "hsla(0, 0%, 100%, 0.8)",
@@ -26,7 +26,7 @@ const Signup = () => {
             backdropFilter: "blur(5px)"
           }}
         >
-          <div className="card-body py-5 px-md-4">
+          <div className="card-body1 py-5 px-md-4">
             <div className="row d-flex justify-content-center">
               <div className="col-lg-8">
                 <h2 className="fw-bold mb-5">Sign up now</h2>
@@ -103,31 +103,31 @@ const Signup = () => {
                     </button>
                   </div>
                   {/* Register buttons */}
-                  <div className="text-center">
+                  <div className="text-center1">
                     <p>or sign up with:</p>
                     <button
                       type="button"
-                      className="btn btn-link btn-floating mx-1"
+                      className="btn1 btn-link btn-floating mx-1"
                     >
-                      <i className="fab fa-facebook-f" />
+                      <i className="fab1 fa-facebook-f" />
                     </button>
                     <button
                       type="button"
-                      className="btn btn-link btn-floating mx-1"
+                      className="btn1 btn-link btn-floating mx-1"
                     >
-                      <i className="fab fa-google" />
+                      <i className="fab1 fa-google" />
                     </button>
                     <button
                       type="button"
-                      className="btn btn-link btn-floating mx-1"
+                      className="btn1 btn-link btn-floating mx-1"
                     >
-                      <i className="fab fa-twitter" />
+                      <i className="fab1 fa-twitter" />
                     </button>
                     <button
                       type="button"
-                      className="btn btn-link btn-floating mx-1"
+                      className="btn1 btn-link btn-floating mx-1"
                     >
-                      <i className="fab fa-github" />
+                      <i className="fab1 fa-github" />
                     </button>
                   </div>
                 </form>
@@ -135,6 +135,18 @@ const Signup = () => {
               </div>
 
             </div>
+
+          </div>
+
+        </div>
+      </section>
+      {/* Section: Design Block */}
+    </>
+
+  )
+}
+
+export default Signup
 
           </div>
 
