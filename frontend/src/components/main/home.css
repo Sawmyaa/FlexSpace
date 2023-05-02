@@ -1,3 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* div{
+  background-color: black;
+} */
+
+.dateInput{
+  background-color: var(--whiteColor);  
+}
+.destinationInput{
+  background-color: var(--whiteColor);
+}
+.priceInput{
+  background-color: var(--whiteColor);
+}
 
 
 /* Home Design */
@@ -26,12 +47,12 @@
    
    video{
      position: absolute;
-     height: 80%;
+     height: 100%;
      width: 100%;
      top: 0;
      bottom: 0;
      object-fit: cover;
-     opacity: 50%;
+     /* margin-top: 3.5rem; */
    }
    
    .homeContent{
@@ -47,7 +68,11 @@
      color: var(--whiteColor);
      z-index: 100;
      position: relative;
+     margin-top: 5rem;
    }
+   /* .homeTitle{
+    color: var(--whiteColor);
+   } */
    
    .textDiv{
      padding: 2rem 0;
@@ -61,12 +86,17 @@
   /* Searchbox designing */
    .cardDiv{
     position: relative;
-    padding: 2rem 1rem;
-    background: rgb(219, 210, 210);
+    padding: 2rem 1.5rem;
+    background: var(--whiteColor);
     border-radius: 10px;
     gap: 1rem;
     width: fit-content;
-    margin-left: 40rem;
+    margin-top: -4rem;
+    /* justify-content: center; */
+    margin-left: 22rem;
+    opacity: 92%;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* margin-left: 40rem; */
    }
    label{
     display: block;
@@ -79,6 +109,7 @@
    .label_total{
     justify-content: space-between;
     align-items: center;
+    background-color: var(--whiteColor);
    }
    .total{
     color: var(--textColor);
@@ -107,16 +138,17 @@
    }
 
    .icon{
-    font-size: 18px;
+    font-size: 25px;
     color: var(--PrimaryColor);
     margin-left: 10px;
+    margin-top: .4rem;
    }
 
    .input[type=range]{
     background: blue;
    }
 
-   button{
+   .searchbtn{
       position: absolute;
       background: var(--gradientColor);
       width: max-content;
@@ -131,14 +163,54 @@
       color: var(--whiteColor);
    }
 
-    button:hover{
+   .searchbtn:hover{
         background: var(--PrimaryColor);
     }
-    .icon{
+    /* .icon{
       font-size: 18px;
-    }
+    } */
 
     span{
       font-size: 13px;
     }
+
+    @media screen and (min-width: 660px) {
+      .cardDiv{
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Service Section */
+    .col{
+      padding: 1.5rem;
+      padding-top: 1rem;
+    }
+
+    /* Divider section */
+   .facilities{
+    padding-top: 22rem;
+    margin-bottom: 0rem;
+   }
+   .services{
+    padding-top: 5rem;
+    margin-bottom: 0rem;
+   }
+
+   .container{
+    padding-top: 5rem;
+   }
+   .city{
+    padding-top: 5rem;
+   }
+
+   .cwr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .srv{
+    display: flex;
+    justify-content: center;
+   }
 
