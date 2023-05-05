@@ -17,6 +17,7 @@ const About = () => {
       <div className='about-section1'>
        <div className="content-box-lg">
         <div className="container">
+          <div className='row'>
           <div className="col-md-4">
             <div className="about-item text-center">
               <i className="fa fa-globe"></i>
@@ -37,12 +38,12 @@ const About = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="about-item text-center">
+            <div className="about-item text-center" style={{height:"248px"}}>
               <i className="fa fa-location"></i>
               <h3>Flexibility</h3><hr/>
               <p>Users can book office spaces for a  shorter duration of time, making it easier for  them to adapt to changing business needs
 </p>
-
+</div>
             </div>
           </div>
         </div>
@@ -55,4 +56,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
