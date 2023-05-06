@@ -4,7 +4,8 @@ const myschema = new Schema({
     name: String,
     email: {type: String, unique: true},
     password: String,
-    address: String
+    createdAt: Date,
+    verified: {type: Boolean, default: false},
 });
 
 module.exports = model('user', myschema);
