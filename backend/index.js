@@ -30,6 +30,10 @@ app.get('/getall', (req, res) => {
 });
 
 // getall
+
+app.get('/update', (req, res) => {
+    res.send('Response from update');
+});
 // update
 
 app.listen( port, () => { console.log('server started'); } );

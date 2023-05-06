@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+  
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 55%;
+    overflow: hidden;
+    padding: 10px 0;
+    
+
+
+
+}
+
+.inner-container {
+    width: 60%;
+    height: 9%;
+    float: right;
+    padding: 50px;
+    margin: 30px;
+    background-color: rgb(221, 217, 212);
+
+    
+
+}
+.inner-container p{
+    color: black;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(229, 78, 78);
+
+}
+
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    color: rgb(229, 78, 78);
+    margin-bottom: 50px;
+  
+}
+h4{
+    margin-Top:20px;
+    margin-Left:100px;
+    font-weight: 600;
+}
+.about-section1{
+    margin: 40px;
+    padding: 8px;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    padding: 80px, 30px;
+    box-shadow: 0 0 9px rgb(7, 7, 7);
+    
+}
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+.about-item hr{
+    width:46px;
+    height: 3px;
+    background-color: #df1313;
+    margin: 0 auto;
+    border: noe;
+}
+.about-item p{
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+.about-item:hover{
+    background-color:rgba(110, 101, 101, 0.037);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: fff;
+}
+.about-item:hover hr{
+    background-color: fff;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+}
