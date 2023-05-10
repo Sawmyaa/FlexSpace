@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <>
-     <section className="about-section" style={{backgroundImage:'url("/about4.webp")'}}>
+     <section className="about-section" style={{backgroundImage:'url("/logo3.jpg")'}}>
       <div className="inner-container">
         <h1 className="about">FlexSpace</h1>
         <p className="text">
@@ -14,21 +14,23 @@ const About = () => {
       
     
       </section>
+      <div className='about' style={{backgroundColor:" rgb(216, 208, 199", border: "2px"}}>
       <div className='about-section1'>
        <div className="content-box-lg">
         <div className="container">
+        
           <div className='row'>
           <div className="col-md-4">
-            <div className="about-item text-center">
+            <div className="about-item text-center" style={{height:"248px"}}>
               <i className="fa fa-globe"></i>
               <h3>Location</h3><hr/>
-              <p>: Users can choose from a wide range  of available office spaces, including different  locations, sizes, and amenities, allowing them  to find the space that best suits their needs.
+              <p>Users can choose from a wide range  of available office spaces, including different  locations, sizes, and amenities, allowing them  to find the space that best suits their needs.
 </p>
 
             </div>
           </div>
           <div className="col-md-4">
-            <div className="about-item text-center">
+            <div className="about-item text-center" style={{height:"248px"}}>
             <i className="fa fa-search"></i>
            <h3>Transparency</h3><hr/>
               <p>Users can view detailed information about available office spaces,  including photos, reviews, and pricing  information, allowing them to make informed  decisions about where to book.
@@ -49,8 +51,7 @@ const About = () => {
         </div>
        </div>
       </div>
-     
-
+      </div>
      
     </>
   )

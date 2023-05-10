@@ -1,12 +1,16 @@
 import React from 'react'
+import { SiGotomeeting } from 'react-icons/si';
+import './navbar.css'
 import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div >
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{height:"10%"}}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#" style={{color:"Red"}}>
+    <a className="navbar-brand fw-bold" href="#" style={{color:"Blue"}}>
+      {/* <SiGotomeeting className='icon'/> */}
       FlexSpace
     </a>
     <button
@@ -28,31 +32,30 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/main/About">
-           About
-          </NavLink></li>
+          <NavLink className="nav-link" to="/main/about">
+            About
+          </NavLink>
+        </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/main/Signup">
            Signup
           </NavLink>
         </li>
+   
         <li className="nav-item">
           <NavLink className="nav-link" to="/main/Login">
             Login
           </NavLink>
         </li>
-        {/* <li className="nav-item">
-          <NavLink className="nav-link" to="/vendor/VendorProfile">
-            VendorProfile
-          </NavLink>
-        </li> */}
        
       </ul>
+      <button type="submit" className="spacebtn btn-primary btn-block">
+            + ADD YOUR SPACE
+          </button>
     </div>
   </div>
 </nav>
 </div>
-
   
 
   )

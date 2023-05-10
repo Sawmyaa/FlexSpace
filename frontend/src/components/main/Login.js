@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
 
 
+
 const Login = () => {
+  
   const loginForm = useFormik({
 		initialValues: {
 			email: '',
@@ -16,6 +18,7 @@ const Login = () => {
 			const res = await fetch('http://localhost:5000/user/authenticate', {
 				method: 'POST',
 				headers: {
+          
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify(values)

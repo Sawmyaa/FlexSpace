@@ -1,19 +1,19 @@
 import './App.css';
 import './components/main/about.css';
+import './components/main/home.css';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 import Main from './components/main';
 import Home from './components/main/Home';
 import Signup from './components/main/Signup';
 import Login from './components/main/Login';
-import About from './components/main/About';
+import About from './components/main/about';
 import Vendor from './components/vendor';
 import AddSpace from './components/vendor/AddSpace';
-import VendorProfile from './components/vendor/VendorProfile';
+import VendorSignup from './components/vendor/VendorSignup';
+import VendorLogin from './components/vendor/VendorLogin';
+// import ManageSpace from './components/vendor/ManageSpace';
+ 
 
-// import Vendor from './components/vendor'
-// import AddSpace from './components/vendor/AddSpace';
-// import VendorProfile from './components/vendor/VendorProfile';
-// import Profile from './components/main/Profile';
 
 
 
@@ -31,14 +31,16 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="signup" element={<Signup />} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="Profile.js" element={<Profile />} /> */}
+           
           </Route>
 
         </Routes>
         <Routes>
           <Route path="vendor" element={<Vendor />}>
+            {/* <Route path="manageSpace" element={<ManageSpace/>}/> */}
             <Route path="addSpace" element={<AddSpace />} />
-            <Route path="VendorProfile" element={<VendorProfile />} />
+            <Route path="VendorSignup" element={<VendorSignup/>}/>
+            <Route path="VendorLogin" element={<VendorLogin/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

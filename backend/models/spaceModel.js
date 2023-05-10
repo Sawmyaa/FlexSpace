@@ -10,7 +10,7 @@ const myschema = new Schema({
     facilities : String,
     location : String,
     image : String,
-    user : {type : Types.ObjectId, ref: 'users'}
+    // user : {type : Types.ObjectId, ref: 'users'}
 });
 
 module.exports = model('space', myschema);

@@ -13,32 +13,35 @@
     background-size: 55%;
     overflow: hidden;
     padding: 10px 0;
-    
 
-
-
+    }
+.about-section1 .container{
+ margin-block-end: 40px;
+ 
 }
 
 .inner-container {
     width: 60%;
     height: 9%;
     float: right;
-    padding: 50px;
+    padding: 60px;
     margin: 30px;
-    background-color: rgb(221, 217, 212);
+    background-color:whitesmoke;
+    
+ 
 
     
 
 }
 .inner-container p{
-    color: black;
+    color: rgb(36, 34, 34);
 }
 
 .inner-container h1 {
     margin-bottom: 30px;
     font-size: 35px;
-    font-weight: 600;
-    color: rgb(229, 78, 78);
+    font-weight: 550;
+    color: blue;
 
 }
 
@@ -48,20 +51,7 @@
     text-align: justify;
     margin-bottom: 40px;
 }
-h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    color: rgb(229, 78, 78);
-    margin-bottom: 50px;
-  
-}
-h4{
-    margin-Top:20px;
-    margin-Left:100px;
-    font-weight: 600;
-}
+
 .about-section1{
     margin: 40px;
     padding: 8px;
@@ -69,14 +59,15 @@ h4{
 .about-item{
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     padding: 80px, 30px;
     box-shadow: 0 0 9px rgb(7, 7, 7);
+    border: 1px solid rgb(117, 108, 108);
     
 }
 
 .about-item i{
-    font-size: 43px;
+    font-size: 40px;
     margin: 0;
 }
 .about-item hr{
@@ -91,7 +82,7 @@ h4{
     padding-bottom: 35px;
 }
 .about-item:hover{
-    background-color:rgba(110, 101, 101, 0.037);
+    background-color: whitesmoke;
 }
 .about-item:hover i,
 .about-item:hover h3,
