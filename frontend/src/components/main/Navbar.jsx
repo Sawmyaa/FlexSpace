@@ -6,8 +6,8 @@ import {NavLink} from 'react-router-dom';
 const Navbar = () => {
   return (
     
-    <div>
-    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div >
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{height:"10%"}}>
   <div className="container-fluid">
     <a className="navbar-brand fw-bold" href="#" style={{color:"Blue"}}>
       {/* <SiGotomeeting className='icon'/> */}
@@ -32,10 +32,16 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
+          <NavLink className="nav-link" to="/main/about">
+            About
+          </NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink className="nav-link" to="/main/Signup">
            Signup
           </NavLink>
         </li>
+   
         <li className="nav-item">
           <NavLink className="nav-link" to="/main/Login">
             Login
@@ -43,7 +49,7 @@ const Navbar = () => {
         </li>
        
       </ul>
-      <button type="submit" className="spacebtn btn-primary btn-block mb-1">
+      <button type="submit" className="spacebtn btn-primary btn-block">
             + ADD YOUR SPACE
           </button>
     </div>
@@ -51,37 +57,7 @@ const Navbar = () => {
 </nav>
 </div>
   
-  //  <section className="navBarSection">
-  //   <header className="header flex">
-  //     <div className="logoDiv">
-  //       <a href="#" className='logo flex'>
-  //         <h1><SiGotomeeting className='icon'/>FlexSpace.</h1>
-  //       </a>
-  //     </div>
 
-  //     <div className="navBar">
-  //       <ul className="navLists flex">
-  //         {/* <li className="navItem">
-  //           <a href="#" className='navLink'>Home</a>
-  //         </li>
-  //         <li className="navItem">
-  //           <a href="#" className='navLink'>Services</a>
-  //         </li>
-  //         <li className="navItem">
-  //           <a href="#" className='navLink'>About Us</a>
-  //         </li>
-  //         <li className="navItem">
-  //           <a href="#" className='navLink'>Contact Us</a>
-  //         </li> */}
-
-  //         <button className="btn">
-  //           <a href="#">+ ADD YOUR SPACE</a>
-  //         </button>
-  //       </ul>
-  //     </div>
-  //   </header>
-  //  </section>
-  //  </>
   )
 }
 
