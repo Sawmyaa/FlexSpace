@@ -4,7 +4,7 @@ const router = Router();
 
 router.post('/add', (req, res) => {
     console.log(req.body);
-    // res.send('response from space Router');
+    
 
     new Model(req.body).save()
     .then((result) => {

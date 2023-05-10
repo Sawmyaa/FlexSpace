@@ -11,7 +11,6 @@ import Vendor from './components/vendor';
 import AddSpace from './components/vendor/AddSpace';
 import VendorSignup from './components/vendor/VendorSignup';
 import VendorLogin from './components/vendor/VendorLogin';
-// import ManageSpace from './components/vendor/ManageSpace';
  
 
 
@@ -37,7 +36,6 @@ function App() {
         </Routes>
         <Routes>
           <Route path="vendor" element={<Vendor />}>
-            {/* <Route path="manageSpace" element={<ManageSpace/>}/> */}
             <Route path="addSpace" element={<AddSpace />} />
             <Route path="VendorSignup" element={<VendorSignup/>}/>
             <Route path="VendorLogin" element={<VendorLogin/>}/>
@@ -49,3 +47,4 @@ function App() {
 }
 
 export default App;
+
