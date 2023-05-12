@@ -50,7 +50,9 @@ const Navbar = () => {
        
       </ul>
       <button type="submit" className="spacebtn btn-primary btn-block">
+      <NavLink className="nav-link" to="/main/AddSpace">
             + ADD YOUR SPACE
+          </NavLink>
           </button>
     </div>
   </div>
@@ -61,4 +63,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
