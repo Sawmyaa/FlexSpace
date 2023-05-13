@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+// const dbName = 'Flexible_Space';
 
 const url = 'mongodb+srv://madheshiyakajal:Kajal123@cluster0.upiopis.mongodb.net/mydatabase?retryWrites=true&w=majority';
 

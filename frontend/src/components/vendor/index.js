@@ -1,21 +1,14 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'
+import NavBar from './NavBar'
 
-
-import Navbar from '../main/Navbar';
-import Footer from '../main/Footer';
-
-
-
-
-const vendor = () => {
-  return (
-    <div>
-      <Navbar/>
-       <Outlet/> {/*this is for child router */}
-       <Footer/>
-    </div>
-  )
+const Vendor = () => {
+    return (
+        <div>
+            <NavBar />
+            <Outlet />
+        </div>
+    )
 }
 
-export default vendor;
+export default Vendor;

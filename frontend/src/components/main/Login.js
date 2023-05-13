@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 
 
@@ -59,10 +60,10 @@ const Login = () => {
                   <div className="card-body p-4 p-lg-5 text-black">
                   <form onSubmit={loginForm.handleSubmit}>
                       <div className="d-flex align-items-center mb-3 pb-1">
-                        <i
+                        {/* <i
                           className="fas fa-cubes fa-2x me-3"
                           style={{ color: "blue" }}
-                        />
+                        /> */}
                         <span className="h3 fw-bold mb-0">Login</span>
                       </div>
                       <h5
@@ -109,15 +110,13 @@ const Login = () => {
                       <a className="small text-muted" href="#!">
                         Forgot password?
                       </a>
-                      <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
-                        Don't have an account?{" "}
-                        <a href="#!" style={{ color: "#393f81" }}>
-                          Register here
-                        </a>
-                      </p>
+                     
+                      <p className='text-center mt-2'>Don't have account? <Link to='/main/signup'>SignIn</Link></p>
+                       
                       
                      
                     </form>
+                  
                   </div>
                 </div>
               </div>

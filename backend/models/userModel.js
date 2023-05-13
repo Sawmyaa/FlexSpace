@@ -1,11 +1,18 @@
-const { Schema, model } = require('../connection');
+const { Types } = require('mongoose');
+const {Schema, model} = require('../connection');     //import connection.js file
+// importing schema and model from mongoose framework
 
-const myschema = new Schema({
-    name: String,
-    email: { type: String, unique: true },
-    password: String,
-    createdAt: Date,
-    verified: { type: Boolean, default: false },
-});
 
-module.exports = model('user', myschema);
+const mySchema = new Schema({
+    name : String,
+    email : {type: String, unique: true},
+    password : String,
+    createdAt : Date,
+    verified: {type: Boolean, default: false},
+    // role : {String, default: 'user'},
+    // organisation : {type : Types.ObjectId, ref: 'organisation'},
+    // feedback : {type : Types.ObjectId, ref: 'feedback'}
+})
+
+
+module.exports = model('users', mySchema);      
