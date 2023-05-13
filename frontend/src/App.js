@@ -67,11 +67,11 @@ function App() {
                     <Route path="updateData" element={<UpdateData/>}/>
                   </Route>
 
-                  <Route path="user" element={<User />}>
+                  {/* <Route path="user" element={<User />}>
                     <Route path="profile" element={<UserProfile/>} />
                     <Route path='managebooking' element={<ManageBookings/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
-                  </Route>
+                  </Route> */}
                 
               </Routes>
             </VendorProvider>
