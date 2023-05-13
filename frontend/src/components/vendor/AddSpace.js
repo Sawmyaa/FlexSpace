@@ -89,7 +89,7 @@ const AddSpace = () => {
                 <div className="card-body">
                     <div className="row">
                         <div className="col-md-6 my-auto">
-                            <img src="https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" className='w-100' />
+                            <img src="https://coolwallpapers.me/picsup/3090602-apple_computer_desk_electronics_indoors_lamp_laptop_light_macbook_room_table_technology_workplace_workspace.jpg" alt="" className='w-100' />
                         </div>
                         <div className="col-md-6">
                             <div className="card shadow-0">
@@ -107,7 +107,7 @@ const AddSpace = () => {
                                             location: '',
                                             facilities: '',
                                             image: '',
-                                            // vendor: currentUser._id
+                                            vendor: currentUser._id
                                         }}
                                         onSubmit={spaceData}>
 

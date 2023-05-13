@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 import { useVendorContext } from '../../context/VendorProvider'
 
 
-const VendorLogin = () => {
+const VLogin = () => {
 
     const navigate = useNavigate()
 
@@ -37,7 +37,7 @@ const VendorLogin = () => {
             const data = await res.json();
             console.log(data);
             sessionStorage.setItem('vendor', JSON.stringify(data));
-            navigate('/vendor/addSpace')
+            navigate('/vendor/add_space')
             resetForm();
         }
         else if (res.status === 401) {
@@ -68,9 +68,9 @@ const VendorLogin = () => {
         <div className='login-bg-image vh-100'>
 
 
-            <div className="login-card-position"style={{marginTop:"100px"}}>
-                    <div className="card-body" >
-                    <div className="card mx-auto w-50" style={{padding:"15px"}}>
+            <div className="login-card-position">
+                <div className="card mx-auto w-50">
+                    <div className="card-body">
                         <h1 className="card-title text-center">VENDER LOGIN</h1>
 
 
@@ -105,4 +105,4 @@ const VendorLogin = () => {
     )
 }
 
-export default VendorLogin
+export default VLogin

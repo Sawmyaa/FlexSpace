@@ -1,10 +1,10 @@
 import React from 'react'
-// import './style.css'
+import './style.css'
 import { Link } from 'react-router-dom'
 import { Formik } from 'formik'
 import Swal from 'sweetalert2'
 
-const VendorSignUp = () => {
+const VSignUp = () => {
 
     const userData = async (formdata, { resetForm }) => {
         const res = await fetch('http://localhost:5000/vendor/add', {
@@ -37,10 +37,10 @@ const VendorSignUp = () => {
     return (
         <div className='signup-bg-image vh-100'>
 
-            <div className='signup-card-position' style={{marginTop:"70px"}}>
+            <div className='signup-card-position'>
 
                 <div className="card w-50 mx-auto">
-                    <div className="card-body" >
+                    <div className="card-body">
                         <h1 className="card-title text-center">CREATE VENDOR ACCOUNT</h1>
 
                         <Formik
@@ -69,7 +69,7 @@ const VendorSignUp = () => {
                             }
                         </Formik>
 
-                        <p className='text-center'>Already have account? <Link to='/main/vendorLogin'>LogIn</Link></p>
+                        <p className='text-center'>Already have account? <Link to='/main/vlogin'>LogIn</Link></p>
 
 
                     </div>
@@ -82,4 +82,4 @@ const VendorSignUp = () => {
     )
 }
 
-export default VendorSignUp
+export default VSignUp
