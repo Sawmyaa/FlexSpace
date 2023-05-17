@@ -12,7 +12,7 @@ import VendorLogin from './components/main/VendorLogin';
 import Vendor from './components/vendor';
 import AddSpace from './components/vendor/AddSpace';
 import BrowseSpace from './components/main/BrowseSpace';
-import { useState } from 'react'
+import { Component, useState } from 'react'
 import AdminProvider from'./context/AdminProvider';
 import UserProvider from'./context/UserProvider';
 import VendorProvider from'./context/VendorProvider';
@@ -21,11 +21,9 @@ import ALogin from './components/main/ALogin';
 
 import ManageSpace from './components/vendor/ManageSpace';
 import UpdateData from './components/vendor/UpdateData';
-
-
-
-
-
+import User from './components/user';
+import UserProfile from './components/user/UserProfile'
+import ManageBookings from './components/user/ManageBookings';
 
 function App() {
   
@@ -35,8 +33,6 @@ function App() {
     sessionStorage.getItem("vendor")));
   const [currentAdmin, setCurrentAdmin] = useState(JSON.parse(
     sessionStorage.getItem("admin")));
-  
-
   return (
     <div>
       <BrowserRouter>
@@ -67,11 +63,11 @@ function App() {
                     <Route path="updateData" element={<UpdateData/>}/>
                   </Route>
 
-                  {/* <Route path="user" element={<User />}>
+                  <Route path="user" element={<User />}>
                     <Route path="profile" element={<UserProfile/>} />
                     <Route path='managebooking' element={<ManageBookings/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
-                  </Route> */}
+                  </Route>
                 
               </Routes>
             </VendorProvider>
