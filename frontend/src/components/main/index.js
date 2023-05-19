@@ -6,12 +6,13 @@ import Footer from './Footer'
 
 
 
+
 const Main = () => {
   return (
     <div>
       <Navbar/>
-       <Outlet/> {/*this is for child router */}
-   <Footer/>
+      <Outlet/>
+      <Footer/>
     </div>
   )
 }
