@@ -36,7 +36,7 @@ const NavBar = () => {
                     {/* <button className="btn btn-danger ms-3" aria-current="page" onClick={logout}>
                         Logout
                     </button> */}
-                    <button type="button" className="btn btn-dark me-3 mb-2" onClick={logout}>
+                    <button type="button" className="btn btn-dark me-3 mb-2" onClick={logout} style={{borderRadius:"20px", backgroundColor:"blue", fontWeight:"600"}}>
                         LogOut
                     </button>
                     {/* <NavLink className="nav-link text-white" onClick={logout} type='button'>
@@ -50,28 +50,22 @@ const NavBar = () => {
 
 
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
-                <div className="container">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Office_building_icon.png"
-                        height="35"
-                        alt="MDB Logo"
-                        loading="lazy"
-                    />
-                    <h4 className='text-white'>
-                        OFFICE SPACE
-                    </h4>
-
+        <div >
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{ height: "10%" }}>
+                <div className="container-fluid">
+                    <li className="navbar-brand fw-bold" href="#" style={{ color: "Blue" }}>
+                        FlexSpace
+                    </li>
                     <button
                         className="navbar-toggler"
                         type="button"
                         data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
+                        data-mdb-target="#navbarNav"
+                        aria-controls="navbarNav"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
+
                         <i className="fas fa-bars" />
                     </button>
                     <div className="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
@@ -92,7 +86,10 @@ const NavBar = () => {
                                 <b>LOGOUT</b>
                             </NavLink> */}
                             {/* {showLoggedIn()} */}
-                            {showLogout()}
+                           
+                            {showLogout() }
+                          
+                            
 
                         </div>
                     </div>

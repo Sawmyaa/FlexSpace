@@ -15,7 +15,7 @@ const AdminAuth = ({children}) => {
             title : 'Error',
             text: 'Please Login First!!',
         })
-        return <Navigate to="/main/home" />
+        return <Navigate to="/main/ALogin" />
     }
 }
 

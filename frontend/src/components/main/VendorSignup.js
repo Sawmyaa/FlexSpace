@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Formik } from 'formik'
 import Swal from 'sweetalert2'
 
-const VSignUp = () => {
+const VendorSignUp = () => {
 
     const userData = async (formdata, { resetForm }) => {
         const res = await fetch('http://localhost:5000/vendor/add', {
@@ -37,9 +37,9 @@ const VSignUp = () => {
     return (
         <div className='signup-bg-image vh-100'>
 
-            <div className='signup-card-position'>
+            <div className='signup-card-position'  >
 
-                <div className="card w-50 mx-auto">
+                <div className="card w-50 mx-auto"  style={{marginTop:"90px"}}>
                     <div className="card-body">
                         <h1 className="card-title text-center">CREATE VENDOR ACCOUNT</h1>
 
@@ -69,7 +69,7 @@ const VSignUp = () => {
                             }
                         </Formik>
 
-                        <p className='text-center'>Already have account? <Link to='/main/vlogin'>LogIn</Link></p>
+                        <p className='text-center'>Already have account? <Link to='/main/Vendorlogin'>LogIn</Link></p>
 
 
                     </div>
@@ -82,4 +82,4 @@ const VSignUp = () => {
     )
 }
 
-export default VSignUp
+export default VendorSignUp

@@ -10,7 +10,7 @@ const VendorProvider = ({ children, currentVendor }) => {
   const logout = () => {
     sessionStorage.removeItem("Vendor");
     setLoggedIn(false);
-    navigate("/main/alogin");
+    navigate("/main/VendorSignup");
   };
 
   return (

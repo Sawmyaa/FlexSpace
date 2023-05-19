@@ -11,7 +11,7 @@ const UpdateData = () => {
     const [spaceData, setSpaceData] = useState(null)
 
     const getSpaceDataById = async () => {
-        const res = await fetch('http://localhost:5000/addSpace/getbyid/' + id)
+        const res = await fetch('http://localhost:5000/add_space/getbyid/' + id)
         console.log(res.status)
         if (res.status === 200) {
             const data = await res.json();
@@ -25,7 +25,7 @@ const UpdateData = () => {
     }, [])
 
     const update_space_data = async (formdata) => {
-        const res = await fetch('http://localhost:5000/addSpace/update/' + id, {
+        const res = await fetch('http://localhost:5000/add_space/update/' + id, {
             method: 'PUT',
             body: JSON.stringify(formdata),
             headers: {

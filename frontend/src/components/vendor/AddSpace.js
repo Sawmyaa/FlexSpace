@@ -85,16 +85,16 @@ const AddSpace = () => {
     return (
         <div className='container'>
 
-            <div className="card border border-primary mt-5">
+            <div className="card border border-primary mt-2">
                 <div className="card-body">
                     <div className="row">
                         <div className="col-md-6 my-auto">
-                            <img src="https://coolwallpapers.me/picsup/3090602-apple_computer_desk_electronics_indoors_lamp_laptop_light_macbook_room_table_technology_workplace_workspace.jpg" alt="" className='w-100' />
+                            <img src="https://images.pexels.com/photos/13620263/pexels-photo-13620263.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-100' />
                         </div>
                         <div className="col-md-6">
                             <div className="card shadow-0">
                                 <div className="card-body">
-                                    <h3 className="card-title text-center">ADD OFFICE SPACE</h3>
+                                    <h3 className="card-title text-center" style={{color:"blue", fontWeight:"600"}}>ADD OFFICE SPACE</h3>
 
                                     <Formik
                                         initialValues={{

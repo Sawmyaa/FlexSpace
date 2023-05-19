@@ -171,7 +171,7 @@
       } */
   
       span{
-        font-size: 13px;
+        /* font-size: 13px; */
       }
   
       @media screen and (min-width: 660px) {

@@ -17,7 +17,7 @@ const VendorAuth = ({children}) => {
             text: 'Please Login First!!',
         })
         // store the current address in the session storage
-        return <Navigate to="/main/vlogin" />
+        return <Navigate to="/main/VendorLogin" />
     }
 }
 

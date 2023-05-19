@@ -9,10 +9,10 @@ const Navbar = () => {
     <div >
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style={{height:"10%"}}>
   <div className="container-fluid">
-    <a className="navbar-brand fw-bold" href="#" style={{color:"Blue"}}>
-      {/* <SiGotomeeting className='icon'/> */}
+    <li className="navbar-brand fw-bold" href="#" style={{color:"Blue"}}>
+   
       FlexSpace
-    </a>
+    </li>
     <button
       className="navbar-toggler"
       type="button"
@@ -42,15 +42,11 @@ const Navbar = () => {
           </NavLink>
         </li>
    
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/main/Login">
-            Login
-          </NavLink>
-        </li>
+       
        
       </ul>
       <button type="submit" className="spacebtn btn-primary btn-block">
-      <NavLink className="nav-link" to="/main/AddSpace">
+      <NavLink className="nav-link" to="/vendor/add_space">
             + ADD YOUR SPACE
           </NavLink>
           </button>

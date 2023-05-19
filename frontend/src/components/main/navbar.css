@@ -50,21 +50,18 @@ li{
   
  border-radius: 7rem;
  width: 15vw;
- height: 8vh;
+ height: 7vh;
  background-color: blue;
- margin-left: 730px;
+ margin-left: 780px;
 }
 
 
 
 .spacebtn:hover{
-  background: whitesmoke;
+  background: var(--gradientColor);
 }
 
-/* img, video{
-  width: 100%
-  height: auto;
-} */
+
 
 input{
   font-size: 100%

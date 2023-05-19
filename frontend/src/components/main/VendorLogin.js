@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 import { useVendorContext } from '../../context/VendorProvider'
 
 
-const VLogin = () => {
+const VendorLogin = () => {
 
     const navigate = useNavigate()
 
@@ -69,7 +69,7 @@ const VLogin = () => {
 
 
             <div className="login-card-position">
-                <div className="card mx-auto w-50">
+                <div className="card mx-auto w-50" style={{marginTop:"90px"}}>
                     <div className="card-body">
                         <h1 className="card-title text-center">VENDER LOGIN</h1>
 
@@ -97,7 +97,7 @@ const VLogin = () => {
                                 
                             )}
                         </Formik>
-                        <p className='text-center mt-2'>Don't have account? <Link to='/main/vsignup'>SignIn</Link></p>
+                        <p className='text-center mt-2'>Don't have account? <Link to='/main/VendorSignup'>SignIn</Link></p>
                     </div>
                 </div>
             </div>
@@ -105,4 +105,4 @@ const VLogin = () => {
     )
 }
 
-export default VLogin
+export default VendorLogin

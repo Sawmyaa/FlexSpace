@@ -18,12 +18,12 @@ import UserProvider from'./context/UserProvider';
 import VendorProvider from'./context/VendorProvider';
 import ASignUp from './components/main/ASignUp';
 import ALogin from './components/main/ALogin';
-
-import ManageSpace from './components/vendor/ManageSpace';
 import UpdateData from './components/vendor/UpdateData';
 import User from './components/user';
 import UserProfile from './components/user/UserProfile'
 import ManageBookings from './components/user/ManageBookings';
+import VendorAuth from './auth/VendorAuth';
+import ManageSpace from './components/vendor/ManageSpace';
 
 function App() {
   
@@ -52,13 +52,10 @@ function App() {
                   <Route path="browseSpace" element={<BrowseSpace />} />
                   <Route path="ASignUp" element={<ASignUp/>}/>
                   <Route path="ALogin" element={<ALogin/>}/>
-               
-
-
                 </Route>
                 
-                  <Route path="vendor" element={<Vendor />}>
-                    <Route path="addSpace" element={<AddSpace />} />
+                  <Route path="vendor" element={ <VendorAuth> <Vendor /> </VendorAuth> }>
+                    <Route path="add_space" element={<AddSpace />} />
                     <Route path='manage_space' element={<ManageSpace/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
                   </Route>
