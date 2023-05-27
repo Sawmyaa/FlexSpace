@@ -12,6 +12,7 @@ const mySchema = new Schema({
     state: String,
     location : String,
     image : String,
+    screens : {type : Array, default: []},
     vendor : {type : Types.ObjectId, ref: 'vendor'}
 })
 

@@ -74,6 +74,7 @@ const AddSpace = () => {
         });
     };
 
+
     useEffect(() => {
         moreDetails();
     }, []);
@@ -107,7 +108,8 @@ const AddSpace = () => {
                                             location: '',
                                             facilities: '',
                                             image: '',
-                                            vendor: currentUser._id
+                                            vendor: currentUser._id,
+                                            screens: ''
                                         }}
                                         onSubmit={spaceData}>
 

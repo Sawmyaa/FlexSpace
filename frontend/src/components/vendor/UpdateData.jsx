@@ -10,8 +10,9 @@ const UpdateData = () => {
 
     const [spaceData, setSpaceData] = useState(null)
 
+
     const getSpaceDataById = async () => {
-        const res = await fetch('http://localhost:5000/add_space/getbyid/' + id)
+        const res = await fetch('http://localhost:5000/addSpace/getbyid/' + id)
         console.log(res.status)
         if (res.status === 200) {
             const data = await res.json();
@@ -24,8 +25,48 @@ const UpdateData = () => {
         getSpaceDataById();
     }, [])
 
+    const addScreenOption = async (data) => {
+        const res = await fetch('http://localhost:5000/addSpace/pushupdate/' + id, {
+            method: 'PUT',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        console.log(res.status);
+
+        if (res.status === 200) {
+            const data = await res.json();
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Data Updated Successfully'
+            })
+            console.log(data)
+        }
+    }
+
+    const uploadFile = (e) => {
+        const file = e.target.files[0];
+        const fd = new FormData();
+        fd.append("myfile", file);
+        fetch("http://localhost:5000/util/uploadfile", {
+            method: "POST",
+            body: fd,
+        }).then(async (res) => {
+            if (res.status === 200) {
+                console.log("file uploaded");
+                // console.log(file.name);
+                // console.log(file);
+                // setImageData(file.name);
+                await addScreenOption({ screens: file.name });
+            }
+        });
+    };
+
     const update_space_data = async (formdata) => {
-        const res = await fetch('http://localhost:5000/add_space/update/' + id, {
+        const res = await fetch('http://localhost:5000/addSpace/update/' + id, {
             method: 'PUT',
             body: JSON.stringify(formdata),
             headers: {
@@ -86,6 +127,14 @@ const UpdateData = () => {
                                                 <MDBInput className='' label='Rate (per hours)' id='rate' value={values.rate} onChange={handleChange} type='text' />
                                             </div>
                                         </div>
+
+                                        {/* <input type='file' onChange={uploadFile} /> */}
+
+                                       < div className="my-3">
+                                                    <label className="form-label mx-2" for="typeText">Upload Image</label>
+                                                    <input type="file" id="" onChange={uploadFile}/>
+                                                </div>
+
                                         <MDBTextArea className='my-3' label='Location' rows={3} id='location' value={values.location} onChange={handleChange} />
                                         <MDBTextArea className='my-3' label='Facilities' id='facilities' value={values.facilities} onChange={handleChange} rows={4} />
 
@@ -96,23 +145,23 @@ const UpdateData = () => {
                                     </form>
                                 )}
 
-                            </Formik>
-                        </div>
-
+                        </Formik>
                     </div>
 
                 </div>
+
+                </div >
             )
         }
     }
 
 
 
-    return (
-        <div className='container mt-5'>
-            {showUpdatedData()}
-        </div>
-    )
+return (
+    <div className='container mt-5'>
+        {showUpdatedData()}
+    </div>
+)
 }
 
 export default UpdateData

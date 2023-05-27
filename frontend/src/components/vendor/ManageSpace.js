@@ -12,8 +12,6 @@ import Swal from 'sweetalert2';
 const ManageSpace = () => {
 
     const [currentVendor, setCurrentVendor] = useState(JSON.parse(sessionStorage.getItem('vendor')))
-    console.log(currentVendor);
-
 
     const [spaceData, setSpaceData] = useState([])
     const [loading, setLoading] = useState(false)
@@ -99,6 +97,9 @@ const ManageSpace = () => {
                                             </Typography>
 
                                             <img src={'http://localhost:5000/'+space.image} alt="space image" width="50%" height="50%" className='my-3'/>
+                                            {spaceData.map((space)=>(
+                                                <img src={'http://localhost:5000/'+space.screens} alt="screen image" width="50%" height="50%" className='my-3'/>
+                                            ))}
 
                                         </Typography>
                                     </AccordionDetails>
