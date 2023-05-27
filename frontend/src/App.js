@@ -24,6 +24,8 @@ import UserProfile from './components/user/UserProfile'
 import ManageBookings from './components/user/ManageBookings';
 import VendorAuth from './auth/VendorAuth';
 import ManageSpace from './components/vendor/ManageSpace';
+import Booking from './components/user/Booking';
+import SpaceDetails from './components/main/SpaceDetails';
 
 function App() {
   
@@ -50,6 +52,7 @@ function App() {
                   <Route path="vendorSignup" element={<VendorSignUp/>} />
                   <Route path="vendorLogin" element={<VendorLogin />} />
                   <Route path="browseSpace" element={<BrowseSpace />} />
+                  <Route path="spacedetails/:spaceid" element={<SpaceDetails />} />
                   <Route path="ASignUp" element={<ASignUp/>}/>
                   <Route path="ALogin" element={<ALogin/>}/>
                 </Route>
@@ -57,13 +60,14 @@ function App() {
                   <Route path="vendor" element={ <VendorAuth> <Vendor /> </VendorAuth> }>
                     <Route path="add_space" element={<AddSpace />} />
                     <Route path='manage_space' element={<ManageSpace/>}/>
-                    <Route path="updateData" element={<UpdateData/>}/>
+                    <Route path="updateData/:id" element={<UpdateData/>}/>
                   </Route>
 
                   <Route path="user" element={<User />}>
                     <Route path="profile" element={<UserProfile/>} />
                     <Route path='managebooking' element={<ManageBookings/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
+                    <Route path="book/:spaceid" element={<Booking/>}/>
                   </Route>
                 
               </Routes>

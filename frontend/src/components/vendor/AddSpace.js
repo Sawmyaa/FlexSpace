@@ -74,6 +74,7 @@ const AddSpace = () => {
         });
     };
 
+
     useEffect(() => {
         moreDetails();
     }, []);
@@ -107,7 +108,8 @@ const AddSpace = () => {
                                             location: '',
                                             facilities: '',
                                             image: '',
-                                            vendor: currentUser._id
+                                            vendor: currentUser._id,
+                                            screens: ''
                                         }}
                                         onSubmit={spaceData}>
 
@@ -145,6 +147,10 @@ const AddSpace = () => {
                                                     <label className="form-label mx-2" for="typeText">Upload Image</label>
                                                     <input type="file" id="" onChange={uploadFile} />
                                                 </div>
+
+                                               
+
+
 
                                                 <button type="submit" className="btn btn-success w-100">
                                                     Submit
