@@ -55,18 +55,18 @@ const SpaceDetails = () => {
             </div>
 
             <div className="col-md-4 ">
-              <img src={'http://localhost:5000/' + space.image} alt="" 
-              className='w-100 rounded-5'/>
+              <img src={'http://localhost:5000/' + space.image} alt=""
+                className='w-100 rounded-5' />
             </div>
           </div>
 
           <Link
-                        to={`/user/book/${space._id}`}
-                        className="btn btn-primary btn-lg mt-5"
-                        type="button"
-                      >
-                        Book Now
-                      </Link>
+            to={`/user/book/${space._id}`}
+            className="btn btn-primary btn-lg mt-5"
+            type="button"
+          >
+            Book Now
+          </Link>
         </div>
       </div>
     )

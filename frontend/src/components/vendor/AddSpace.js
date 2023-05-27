@@ -148,11 +148,7 @@ const AddSpace = () => {
                                                     <input type="file" id="" onChange={uploadFile} />
                                                 </div>
 
-                                               
-
-
-
-                                                <button type="submit" className="btn btn-success w-100">
+                                                <button type="submit" className="btn btn-primary w-100">
                                                     Submit
                                                 </button>
                                             </form>

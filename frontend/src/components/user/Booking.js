@@ -3,11 +3,27 @@ import app_config from "../../config";
 import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 
+import {
+  Elements
+} from "@stripe/react-stripe-js";
+import CheckoutPage from './CheckoutPage';
+import { loadStripe } from '@stripe/stripe-js';
+const stripePromise = loadStripe("pk_test_51NBup2SEmL2cPMzT0bC06N2glGWdVBD4LdAqzVeL3TebuLedCrgf3QusMBL1bbZnbuhYGfI9ZQBzgLNriBmmWfrF00yihlBE0W");
+
 const Booking = () => {
   const { apiUrl } = app_config;
   const { spaceid } = useParams();
 
   const navigate = useNavigate();
+
+  const [clientSecret, setClientSecret] = useState("");
+  const appearance = {
+    theme: 'stripe',
+  };
+  const options = {
+    clientSecret,
+    appearance,
+  };
 
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(sessionStorage.getItem("user"))
@@ -21,6 +37,16 @@ const Booking = () => {
     setSpaceDetails(data);
   };
 
+  const bookSpace = async () => {
+    fetch(apiUrl + "/create-payment-intent", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ amount: spaceDetails.rate }),
+    })
+      .then((res) => res.json())
+      .then((data) => setClientSecret(data.clientSecret));
+  }
+
   useEffect(() => {
     spaceDetailsById();
   }, []);
@@ -32,14 +58,14 @@ const Booking = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        space : spaceid,
-    user : currentUser._id,
-    amount : spaceDetails.rate,
-    paymentDetails : "Payment Done",
-    createdAt: new Date()
-    })
+        space: spaceid,
+        user: currentUser._id,
+        amount: spaceDetails.rate,
+        paymentDetails: "Payment Done",
+        createdAt: new Date()
+      })
     });
-    
+
     console.log(response.status);
 
     if (response.status === 200) {
@@ -49,7 +75,7 @@ const Booking = () => {
         icon: "success",
       })
       navigate("/user/managebooking");
-    }else{
+    } else {
       Swal.fire({
         title: "Error",
         text: "Something went wrong",
@@ -123,6 +149,17 @@ const Booking = () => {
 
                 <div className="btn btn-success btn-lg btn-block" onClick={saveOrder}>
                   Complete Booking
+                </div>
+              </div>
+
+              <div className="card mt-4">
+                <div className="card-body">
+                  <button className="btn btn-primary" onClick={bookSpace}>Book Now</button>
+                  {clientSecret && (
+                    <Elements options={options} stripe={stripePromise}>
+                      <CheckoutPage />
+                    </Elements>
+                  )}
                 </div>
               </div>
             </div>

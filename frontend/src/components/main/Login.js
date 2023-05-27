@@ -1,11 +1,14 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import {NavLink} from 'react-router-dom'; 
 
 
 
 const Login = () => {
+
+  const navigate = useNavigate();
   
   const loginForm = useFormik({
 		initialValues: {
@@ -31,6 +34,12 @@ const Login = () => {
 					title: 'Success',
 					text : 'Logged in Successfully'
 				})
+
+        const data = await res.json();
+        console.log(data);
+        sessionStorage.setItem('user', JSON.stringify(data));
+        navigate('/main/browseSpace')
+
 			}else if( res.status === 401){
 				Swal.fire({
 					icon: 'error',
@@ -42,8 +51,8 @@ const Login = () => {
 	})
   
   return (
-    <section className="vh-60" style={{ backgroundColor: "#020e2e"}}>
-      <div className="container py-5 h-100">
+    <section className="vh-70" style={{ backgroundColor: "#020e2e"}}>
+      <div className="container py-6 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col col-xl-10">
             <div className="card" style={{ borderRadius: "1rem" }}>
@@ -53,7 +62,7 @@ const Login = () => {
                     src="https://i.pinimg.com/564x/f8/e9/53/f8e953bad531762109568bf8b4625956.jpg"
                     alt="login form"
                     className="img-fluid mt-7"
-                    style={{ borderRadius: "1rem 0 0 1rem", height: "75vh", width:"85vw" }}
+                    style={{ borderRadius: "1rem 0 0 1rem", height: "85vh", width:"85vw" }}
                   />
                 </div>
                 <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -101,10 +110,12 @@ const Login = () => {
                       </div>
                       <div className="pt-1 mb-4">
                         <button
-                          className="btn btn-primary btn-lg" style={{ width: "450px" }}
+                          className="btn btn-primary btn-lg w-100" style={{ width: "450px" }}
                           type="submit"
                         >
+                           <NavLink className="nav-link" to="/user/Booking">
                           Login
+                          </NavLink>
                         </button>
                       </div>
                       <a className="small text-muted" href="#!">

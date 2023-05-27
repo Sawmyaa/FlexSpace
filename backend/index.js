@@ -51,3 +51,21 @@ app.get('/update', (req, res) => {
 // update
 
 app.listen( port, () => { console.log('express server started')} );
+
+const stripe = require("stripe")('sk_test_51NBup2SEmL2cPMzTyB3n9BlbMookbpdISHItE5gFVEm9YaBA2pLyqsucjLNQboPvZ5ELafO1sTv7XuMdSNjytAKq00VP4Me1fI');
+app.post("/create-payment-intent", async (req, res) => {
+    const { items } = req.body;
+  
+    // Create a PaymentIntent with the order amount and currency
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: 10000,
+      currency: "inr",
+      automatic_payment_methods: {
+        enabled: true,
+      },
+    });
+  
+    res.send({
+      clientSecret: paymentIntent.client_secret,
+    });
+  });
