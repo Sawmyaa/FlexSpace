@@ -49,17 +49,11 @@ li{
 .spacebtn{
   
  border-radius: 7rem;
- width: 15vw;
- height: 7vh;
- background-color: blue;
- margin-left: 780px;
+ /* width: 15vw;
+ height: 7vh; */
+ margin-left: 800px;
 }
 
-
-
-.spacebtn:hover{
-  background: var(--gradientColor);
-}
 
 
 

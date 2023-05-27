@@ -158,7 +158,7 @@ const Signup = () => {
                           </label>
                         </div>
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="submit" class="btn btn-success" style={{ width: "85%" }}>Register</button>
+                          <button type="submit" class="btn btn-primary" style={{ width: "85%" }}>Register</button>
                           </div>
                           <p className='text-center'>Already have account? <Link to='/main/login'>LogIn</Link></p>
 

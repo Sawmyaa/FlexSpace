@@ -8,6 +8,7 @@ const Main = () => {
   return (
     <div>
       <Navbar/>
+      <div className='' style={{marginTop: '70px'}}></div>
       <Outlet/>
       <Footer/>
     </div>

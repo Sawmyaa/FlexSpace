@@ -183,7 +183,7 @@
   
       /* Service Section */
       .col{
-        padding: 1.5rem;
+        padding: 0.5rem;
         padding-top: 1rem;
       }
   
@@ -212,5 +212,15 @@
      .srv{
       display: flex;
       justify-content: center;
+     }
+
+     .homebtn{
+      color: orangered;
+      background-color: yellow;
+      width: 17vw;
+      height: 9vh;
+      align-items: center;
+      justify-content: center;
+      margin-left: 32rem;
      }
      

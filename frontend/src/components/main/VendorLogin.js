@@ -89,7 +89,7 @@ const VendorLogin = () => {
                                         Forgot Password
                                     </Link>
 
-                                    <button type="submit" className="btn btn-success w-100 my-2">
+                                    <button type="submit" className="btn btn-primary w-100 my-2">
                                         {isSubmitting ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> : "Submit"}
                                     </button>
                                 </form>

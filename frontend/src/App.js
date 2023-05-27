@@ -24,6 +24,7 @@ import UserProfile from './components/user/UserProfile'
 import ManageBookings from './components/user/ManageBookings';
 import VendorAuth from './auth/VendorAuth';
 import ManageSpace from './components/vendor/ManageSpace';
+import Booking from './components/user/Booking';
 
 function App() {
   
@@ -64,6 +65,7 @@ function App() {
                     <Route path="profile" element={<UserProfile/>} />
                     <Route path='managebooking' element={<ManageBookings/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
+                    <Route path="book/:spaceid" element={<Booking/>}/>
                   </Route>
                 
               </Routes>
