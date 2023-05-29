@@ -19,16 +19,16 @@ const Home = () => {
             Your space search ends here.
           </h1>
         </div>
-        <button type="button" className="homebtn btn btn-light btn-rounded" >
+        {/* <button type="button" className="homebtn btn btn-light btn-rounded" >
         <NavLink className="nav-link" to="/main/login">
   Book Now
   </NavLink>
 </button>
-      </div>
+      </div> */}
 
 
 
-      {/* <div className="cardDiv grid">
+      <div className="cardDiv grid">
         <div className="destinationInput">
           <label htmlFor="city">Search your destination</label>
           <div className="input flex">
@@ -53,10 +53,10 @@ const Home = () => {
         </div>
 
         <div className="searchOptions flex">
-          {/* <HiFilter className="icon"/> */}
-          {/* <button className='searchbtn'>SEARCH</button>
+           {/* <HiFilter className="icon"/> */}
+          <button className='searchbtn'>SEARCH</button>
         </div>
-      </div> */}
+      </div>
 
       {/* Dividers */}
       <section className="text-center">
@@ -344,6 +344,7 @@ const Home = () => {
 
       </>
 
+    </div>
     </div>
 
 

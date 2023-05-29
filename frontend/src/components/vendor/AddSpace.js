@@ -145,6 +145,7 @@ const AddSpace = () => {
 
                                                 <div className="my-3">
                                                     <label className="form-label mx-2" for="typeText">Upload Image</label>
+                                                    Add images with equal height and width
                                                     <input type="file" id="" onChange={uploadFile} />
                                                 </div>
 

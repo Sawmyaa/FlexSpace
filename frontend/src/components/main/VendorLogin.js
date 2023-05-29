@@ -71,7 +71,7 @@ const VendorLogin = () => {
             <div className="login-card-position">
                 <div className="card mx-auto w-50" style={{marginTop:"90px"}}>
                     <div className="card-body">
-                        <h1 className="card-title text-center">VENDER LOGIN</h1>
+                        <h1 className="card-title text-center">VENDOR LOGIN</h1>
 
 
                         <Formik
@@ -86,7 +86,7 @@ const VendorLogin = () => {
                                     <input required type="password" className="form-control mb-3" value={values.password} name="password" onChange={handleChange} />
 
                                     <Link to="/forgetpswd" className="">
-                                        Forgot Password
+                                        Forgot Password?
                                     </Link>
 
                                     <button type="submit" className="btn btn-primary w-100 my-2">

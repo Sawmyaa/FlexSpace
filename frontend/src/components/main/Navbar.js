@@ -37,8 +37,8 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/main/Signup">
-                  Signup
+                <NavLink className="nav-link" to="/main/Login">
+                  Login
                 </NavLink>
               </li>
               <li className="nav-item">
