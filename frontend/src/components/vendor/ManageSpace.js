@@ -97,8 +97,8 @@ const ManageSpace = () => {
                                             </Typography>
 
                                             <img src={'http://localhost:5000/'+space.image} alt="space image" width="50%" height="50%" className='my-3'/>
-                                            {spaceData.map((space)=>(
-                                                <img src={'http://localhost:5000/'+space.screens} alt="screen image" width="50%" height="50%" className='my-3'/>
+                                            {space.screens.map((screen)=>(
+                                                <img src={'http://localhost:5000/'+screen} alt="screen image" width="50%" height="50%" className='my-3'/>
                                             ))}
 
                                         </Typography>

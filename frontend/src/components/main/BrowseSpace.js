@@ -1,6 +1,6 @@
 import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import app_config from "../../config";
 
 const BrowseSpace = () => {
@@ -8,6 +8,8 @@ const BrowseSpace = () => {
   const [masterList, setMasterList] = useState([]);
   const [loading, setLoading] = useState(false);
   const { apiUrl } = app_config;
+
+  const { location, price } = useParams();
 
   const categories = [
     "Office",
@@ -50,9 +52,19 @@ const BrowseSpace = () => {
     if (res.status === 200) {
       const data = await res.json();
       console.log(data);
-      setAllSpaceData(data);
+      if (location && price) {
+        const [p1, p2] = price.split("-").map((p) => parseInt(p));
+        console.log(p1, p2);
+        const filtered = data.filter(
+          (data) => data["location"] === location && data["price"] >= p1 && data["price"] <= p2
+        );
+        setMasterList(filtered);
+        setAllSpaceData(data);
+
+      }
       setLoading(false);
       setMasterList(data);
+      setAllSpaceData(data);
     }
   };
 
@@ -97,11 +109,17 @@ const BrowseSpace = () => {
     );
   };
 
+  useEffect(() => {
+
+  }, [])
+
+
   const filterSpace = async (category, value) => {
     console.log(category, value);
     const res = await fetch(apiUrl + "/addSpace/getall");
     console.log(res.status);
     const data = await res.json();
+    console.log(data);
     let filtered = [];
     if (category === "rate") {
       const [p1, p2] = value.split("-").map((p) => parseInt(p));
@@ -109,10 +127,9 @@ const BrowseSpace = () => {
       filtered = data.filter(
         (data) => data[category] >= p1 && data[category] <= p2
       );
-    } else if (category === "name") {
-      // console.log(data);
-      filtered = data.filter((data) =>
-        data[category].toLowerCase().includes(value.toLowerCase())
+    } else {
+      filtered = data.filter((d) =>
+        d[category].toLowerCase().includes(value.toLowerCase())
       );
     }
 
@@ -133,9 +150,8 @@ const BrowseSpace = () => {
         {categories.map((cat, index) => (
           <div className="mx-2 text-center" key={index}>
             <button
-              className={`btn ${
-                selCategory === index ? "btn-secondary" : "btn-primary mt-3"
-              } btn-rounded`}
+              className={`btn ${selCategory === index ? "btn-secondary" : "btn-primary mt-3"
+                } btn-rounded`}
               onClick={() => {
                 filterSpace("name", `${cat}`);
               }}
@@ -272,10 +288,10 @@ const BrowseSpace = () => {
                   type="checkbox"
                   checked={range === selPriceRange}
                   onChange={(e) => {
-                    if(e.target.checked){
+                    if (e.target.checked) {
                       setSelPriceRange(range);
                       filterSpace("rate", range);
-                    }else{
+                    } else {
                       setSelPriceRange(null);
                       fetchAllSpaceData();
                     }
@@ -285,9 +301,9 @@ const BrowseSpace = () => {
               </div>
             ))}
 
-<hr className="mt-3" />
+            <hr className="mt-3" />
             <h3>Select Location</h3>
-            
+
             {cities.map((city) => (
               <div class="form-check">
                 <input
@@ -295,11 +311,11 @@ const BrowseSpace = () => {
                   type="checkbox"
                   checked={city === selCity}
                   onChange={(e) => {
-                    if(e.target.checked){
+                    if (e.target.checked) {
                       setSelCity(city);
                       // --------------------------to change to city
                       filterSpace("location", city);
-                    }else{
+                    } else {
                       setSelCity(null);
                       fetchAllSpaceData();
                     }
@@ -308,7 +324,7 @@ const BrowseSpace = () => {
                 <label class="form-check-label">{city}</label>
               </div>
             ))}
-            
+
           </div>
           <div className="col-md-9">
             <div className="d-flex">

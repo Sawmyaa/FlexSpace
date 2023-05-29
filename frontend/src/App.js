@@ -26,6 +26,7 @@ import VendorAuth from './auth/VendorAuth';
 import ManageSpace from './components/vendor/ManageSpace';
 import Booking from './components/user/Booking';
 import SpaceDetails from './components/main/SpaceDetails';
+import CompareSpaces from './components/vendor/CompareSpaces';
 
 function App() {
   
@@ -52,7 +53,9 @@ function App() {
                   <Route path="vendorSignup" element={<VendorSignUp/>} />
                   <Route path="vendorLogin" element={<VendorLogin />} />
                   <Route path="browseSpace" element={<BrowseSpace />} />
+                  <Route path="browseSpace/:location/:price" element={<BrowseSpace />} />
                   <Route path="spacedetails/:spaceid" element={<SpaceDetails />} />
+                  <Route path="compare" element={<CompareSpaces />} />
                   <Route path="ASignUp" element={<ASignUp/>}/>
                   <Route path="ALogin" element={<ALogin/>}/>
                 </Route>
