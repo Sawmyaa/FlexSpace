@@ -69,7 +69,6 @@ function App() {
                     <Route path="updateData" element={<UpdateData/>}/>
                     <Route path="book/:spaceid" element={<Booking/>}/>
                   </Route>
-                
               </Routes>
             </VendorProvider>
           </UserProvider>
