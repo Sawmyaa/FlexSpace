@@ -144,7 +144,6 @@ const UpdateData = () => {
 
                                     </form>
                                 )}
-
                         </Formik>
                     </div>
 
