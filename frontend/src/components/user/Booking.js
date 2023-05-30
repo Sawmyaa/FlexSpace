@@ -157,7 +157,7 @@ const Booking = () => {
                   <button className="btn btn-primary" onClick={bookSpace}>Book Now</button>
                   {clientSecret && (
                     <Elements options={options} stripe={stripePromise}>
-                      <CheckoutPage />
+                      <CheckoutPage spaceDetails={spaceDetails} />
                     </Elements>
                   )}
                 </div>
