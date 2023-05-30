@@ -57,7 +57,7 @@ const Home = () => {
           <div className="priceInput">
             <div className="label_total flex">
               <label htmlFor="price">Max price:</label>
-              <h3 className="total">$5000</h3>
+              <h6 className="total">Rs.5000</h6>
             </div>
             <div className="input flex">
               <input type="range" max='5000' min='1000' onChange={ e => setPrice(parseInt(e.target.value))} />
