@@ -51,6 +51,15 @@ const CompareSpaces = () => {
                 <p>
                 <strong>Location: {data.location}</strong>
               </p>
+                <p>
+                <strong>Size: {data.size}</strong>
+              </p>
+                <p>
+                <strong>Rate: {data.rate}</strong>
+              </p>
+                <p>
+                <strong>Facilities: {data.facilities}</strong>
+              </p>
              
                 {/* <div className="d-flex">
                 <Link
