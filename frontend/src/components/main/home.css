@@ -101,11 +101,7 @@
       gap: 1rem;
       width: fit-content;
       margin-top: -4rem;
-      /* justify-content: center; */
       margin-left: 15rem;
-      /* opacity: 92%; */
-      /* grid-template-columns: repeat(2, 1fr); */
-      /* margin-left: 40rem; */
      }
      label{
       display: block;
@@ -179,9 +175,9 @@
         font-size: 18px;
       } */
   
-      span{
-        /* font-size: 13px; */
-      }
+      /* span{
+        font-size: 13px;
+      } */
   
       @media screen and (min-width: 660px) {
         .cardDiv{

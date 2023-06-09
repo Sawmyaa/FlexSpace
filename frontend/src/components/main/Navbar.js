@@ -47,11 +47,11 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <button type="button" className="spacebtn btn btn-primary btn-rounded">
-              <NavLink className="nav-link" to="/vendor/add_space">
+            <ul className="navbar-nav ms-auto">
+              <NavLink className="spacebtn btn btn-primary btn-rounded" to="/vendor/add_space">
                 + ADD YOUR SPACE
               </NavLink>
-            </button>
+            </ul>
           </div>
         </div>
       </nav>
