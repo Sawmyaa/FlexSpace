@@ -355,7 +355,10 @@ const Home = () => {
 </> */}
         <>
           {/* First column */}
-          <div className="col-lg-6 mb-5 mb-lg-0">
+          {/* <div className="col-lg-6 mb-5 mb-lg-0"> */}
+            <div className="row">
+              <div className="col-md-4">
+                <div className="leftside">
             <div
               style={{
                 background: "hsla(0, 0%, 100%, 0.55)",
@@ -405,13 +408,17 @@ const Home = () => {
                     Send
                   </button>
                 </form>
+                </div>
+                </div>
               </div>
             </div>
           </div>
           {/* First column */}
 
 
-          <div className="col-lg-6 mb-5 mb-lg-0">
+          {/* <div className="col-lg-6 mb-5 mb-lg-0"> */}
+          <div className="col-md-4">
+            <div className="rightside">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96813.17497894862!2d-73.97484803586903!3d40.68692922859912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1671718528728!5m2!1sen!2spl"
               width={600}
@@ -422,7 +429,7 @@ const Home = () => {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-
+          </div>
         </>
 
       </div>
