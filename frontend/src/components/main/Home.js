@@ -4,11 +4,53 @@ import './home.css'
 import { GrLocation } from 'react-icons/gr'
 import { HiFilter } from 'react-icons/hi'
 import { NavLink, useNavigate } from 'react-router-dom';
+import img from '../../Assets/img.jpg'
 
 const Home = () => {
+        {/* Data */}
+        // const Data = [
+        //   {
+        //     id:1,
+        //     imgSrc: img,
+        //     destTitle: 'OfficeDesk',
+        //     location: 'Mumbai',
+        //     price: 'Rs.5000',
+        //     rating: 4.5,
+        //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        //   },
+        //   {
+        //     id:2,
+        //     imgSrc: img1,
+        //     destTitle: 'ConferenceRoom',
+        //     location: 'Delhi',
+        //     price:' Rs.2000',
+        //     rating: 4.5,
+        //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        //   },
+        //   {
+        //     id:3,
+        //     imgSrc: img2,
+        //     destTitle: 'HotDesk',
+        //     location: 'Noida',
+        //     price: 'Rs.3000',
+        //     rating: 4.5,
+        //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        //   },
+
+        //   {
+        //     id:4,
+        //     imgSrc: img3,
+        //     destTitle: 'URBAN DESK',
+        //     location: 'Bangalore',
+        //     price: 'Rs.4000',
+        //     rating: 4.5,
+        //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+        //   },
+        // ]
+
 
   const [location, setLocation] = useState('');
-  const [price, setPrice] = useState('');
+  const [price, setPrice] = useState(5000);
 
   const navigate = useNavigate();
 
@@ -49,7 +91,7 @@ const Home = () => {
             </div>
           </div>
           <div className="dateInput">
-            <label htmlFor="city">Check-in:</label>
+            <label htmlFor="date">Check-in:</label>
             <div className="input flex">
               <input type="date" />
             </div>
@@ -62,6 +104,7 @@ const Home = () => {
             <div className="input flex">
               <input type="range" max='5000' min='1000' onChange={ e => setPrice(parseInt(e.target.value))} />
             </div>
+            
           </div>
 
           <div className="searchOptions flex">
@@ -101,7 +144,33 @@ const Home = () => {
           </div>
         </section>
 
+        {/* Most searched places */}
+        {/* <section className='main container section'>
+          <div className="sectitle">
+            <h3 className='title'>
+              Most searched spaces
+            </h3>
+          </div>
 
+          <div className='secContent grid'>
+           {
+              Data.map((id, imgSrc, deskTitle, location, price, rate, description) => {
+                return(
+                  <div key={id} className='singleDestination'>
+                    <div className="imgDiv">
+                      <img src={imgSrc} alt={destTitle} />
+                      </div>
+                      <div className="cardInfo">
+                        <h4 className="cardTitle">{destTitle}</h4>
+                    </div>
+                    </div>
+                )
+            })
+           }
+          </div>
+        </section> */}
+
+  
         {/* Gallery */}
         <>
           {/* Section: About me */}

@@ -16,6 +16,17 @@ export default function CheckoutPage({ spaceDetails }) {
   const navigate = useNavigate();
 
   useEffect(() => {
+    sessionStorage.setItem('orderData', JSON.stringify({
+      space: spaceDetails._id,
+      user: currentUser._id,
+      amount: spaceDetails.rate,
+      paymentDetails: '',
+      createdAt: new Date()
+    }));
+  }, [])
+  
+
+  useEffect(() => {
     if (!stripe) {
       return;
     }
@@ -25,6 +36,8 @@ export default function CheckoutPage({ spaceDetails }) {
     if (!clientSecret) {
       return;
     }
+
+    
 
     stripe.retrievePaymentIntent(clientSecret).then(({ paymentIntent }) => {
       switch (paymentIntent.status) {
@@ -84,14 +97,14 @@ export default function CheckoutPage({ spaceDetails }) {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "",
+        return_url: "http://localhost:3000/user/thankyoupage",
         // redirect: 'if_required'
       }
     });
-    if (!error) {
-      saveOrder();
-      navigate('/user/managebooking');
-    }
+    // if (!error) {
+    //   saveOrder();
+    //   navigate('/user/managebooking');
+    // }
 
     // This point will only be reached if there is an immediate error when
     // confirming the payment. Otherwise, your customer will be redirected to

@@ -51,7 +51,8 @@ li{
  border-radius: 7rem;
  /* width: 15vw;
  height: 7vh; */
- margin-left: 800px;
+ /* margin-left: 800px; */
+ align-items: right;
 }
 
 

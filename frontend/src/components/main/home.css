@@ -180,7 +180,7 @@
       } */
   
       span{
-        font-size: 13px;
+        /* font-size: 13px; */
       }
   
       @media screen and (min-width: 660px) {
@@ -223,13 +223,7 @@
       justify-content: center;
      }
 
-     /* .homebtn{
-      color: orangered;
-      background-color: yellow;
-      width: 17vw;
-      height: 9vh;
-      align-items: center;
-      justify-content: center;
-      margin-left: 32rem;
-     } */
+    .section{
+      padding: 4rem 0 2rem;
+    }
      

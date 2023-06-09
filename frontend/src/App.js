@@ -27,6 +27,8 @@ import ManageSpace from './components/vendor/ManageSpace';
 import Booking from './components/user/Booking';
 import SpaceDetails from './components/main/SpaceDetails';
 import CompareSpaces from './components/vendor/CompareSpaces';
+import Thankyoupage from './components/user/Thankyoupage';
+import UserAuth from './auth/UserAuth';
 
 function App() {
   
@@ -66,10 +68,11 @@ function App() {
                     <Route path="updateData/:id" element={<UpdateData/>}/>
                   </Route>
 
-                  <Route path="user" element={<User />}>
+                  <Route path="user" element={ <UserAuth> <User /> </UserAuth>}>
                     <Route path="profile" element={<UserProfile/>} />
                     <Route path='managebooking' element={<ManageBookings/>}/>
                     <Route path="updateData" element={<UpdateData/>}/>
+                    <Route path="thankyoupage" element={<Thankyoupage/>}/>
                     <Route path="book/:spaceid" element={<Booking/>}/>
                   </Route>
               </Routes>
