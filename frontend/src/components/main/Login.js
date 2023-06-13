@@ -113,9 +113,9 @@ const Login = () => {
                           className="btn btn-primary btn-lg w-100" style={{ width: "450px" }}
                           type="submit"
                         >
-                           <NavLink className="nav-link" to="/user/Booking">
+                           {/* <NavLink className="nav-link" to="/user/Booking"> */}
                           Login
-                          </NavLink>
+                          {/* </NavLink> */}
                         </button>
                       </div>
                       <a className="small text-muted" href="#!">
