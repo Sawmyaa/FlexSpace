@@ -38,7 +38,7 @@ const Login = () => {
         const data = await res.json();
         console.log(data);
         sessionStorage.setItem('user', JSON.stringify(data));
-        navigate('/main/browseSpace')
+        navigate('/user/profile')
 
 			}else if( res.status === 401){
 				Swal.fire({
@@ -113,9 +113,9 @@ const Login = () => {
                           className="btn btn-primary btn-lg w-100" style={{ width: "450px" }}
                           type="submit"
                         >
-                           <NavLink className="nav-link" to="/user/Booking">
+                           {/* <NavLink className="nav-link" to="/user/Booking"> */}
                           Login
-                          </NavLink>
+                          {/* </NavLink> */}
                         </button>
                       </div>
                       <a className="small text-muted" href="#!">

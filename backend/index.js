@@ -6,6 +6,7 @@ const adminRouter = require('./routers/adminRouter');
 const vendorRouter = require('./routers/vendorRouter');
 const bookRouter = require('./routers/bookRouter');
 const utilRouter = require('./routers/util');
+const feedbackRouter = require('./routers/feedbackRouter');
 
 
 
@@ -28,6 +29,7 @@ app.use('/admin', adminRouter);
 app.use('/vendor', vendorRouter);
 app.use('/book', bookRouter);
 app.use('/util', utilRouter);
+app.use('/feedback', feedbackRouter);
 
 app.use(express.static('./static/uploads'))
 
