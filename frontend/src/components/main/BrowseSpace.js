@@ -22,19 +22,21 @@ const BrowseSpace = () => {
   ];
 
   const priceRange = [
-    "0-2000",
-    "5000-15000",
-    "15000-30000",
-    "30000-50000",
-    "Above 50000",
+    "0-500",
+    "500-1000",
+    "1000-2000",
+    "20000-3000",
+    "Above 3000",
   ];
 
   const cities = [
     "Mumbai",
     "Delhi",
-    "Bangalore",
+    "Bangaluru",
     "Hyderabad",
-    "Ahmedabad"
+    "Ahmedabad",
+    "Kanpur",
+    "Lucknow"
   ]
 
   const [selCategory, setSelCategory] = useState(null);
