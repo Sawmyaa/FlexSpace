@@ -231,9 +231,9 @@ FlexSpace understands that business needs can change over time. Their flexible a
                   alt="Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Flexible Workspace </h5>
+                  <h5 className="card-title">Flexible Workspace Options</h5>
                   <p className="card-text">
-                  FlexSpace offers a variety of flexible workspace options tailored to meet the needs of different professionals and businesses. Whether you require private offices, coworking spaces, meeting rooms, or virtual offices, FlexSpace provides a range of choices to accommodate your requirements.
+                  FlexSpace provides a range of workspace options, including coworking spaces, private offices, virtual offices, and meeting rooms, catering to the diverse needs of businesses and professionals.
                   </p>
                 </div>
               </div>
@@ -246,9 +246,9 @@ FlexSpace understands that business needs can change over time. Their flexible a
                   alt="Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Prime Locations</h5>
+                  <h5 className="card-title">Modern Amenities</h5>
                   <p className="card-text">
-                  FlexSpace carefully selects prime locations for their workspaces, ensuring accessibility and convenience for their clients. These locations are often in bustling business districts or easily accessible areas, making it convenient for professionals to reach their workspace and meet clients or partners.
+                  FlexSpace centers are equipped with modern amenities, such as high-speed internet, comfortable furniture, state-of-the-art technology, and well-designed communal areas, ensuring a productive and comfortable work environment.
                   </p>
                 </div>
               </div>
@@ -261,9 +261,9 @@ FlexSpace understands that business needs can change over time. Their flexible a
                   alt="Los Angeles Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Real-Time Availability</h5>
+                  <h5 className="card-title">Business Support Services</h5>
                   <p className="card-text">
-                  FlexSpace's office space comparing system provides real-time availability information. You can quickly check the availability of different office spaces, saving you time and effort in contacting multiple providers individually. This feature enables you to compare the availability of office spaces and make efficient decisions based on your desired move-in dates or timeline.
+                  FlexSpace offers a range of business support services, including reception and concierge services, mail handling, phone answering, IT support, and access to professional meeting and conference facilities, streamlining business operations and enhancing productivity.
                   </p>
                 </div>
                 {/* <div className="card-footer">
@@ -279,9 +279,9 @@ FlexSpace understands that business needs can change over time. Their flexible a
                   alt="Palm Springs Road"
                 />
                 <div className="card-body">
-                  <h5 className="card-title"> Comparing System</h5>
+                  <h5 className="card-title">Prime Locations</h5>
                   <p className="card-text">
-                  FlexSpace offers a user-friendly office space comparing system that allows you to evaluate and choose the most suitable workspace for your needs. Their online platform provides detailed information on available office spaces, including square footage, amenities, pricing, and availability. With this comparing system, you can easily assess different options side by side, enabling you to make an informed decision based on your specific requirements.
+                  FlexSpace centers are strategically located in prime locations, ensuring easy access to transportation, amenities, and a thriving business environment.
                   </p>
                 </div>
 
