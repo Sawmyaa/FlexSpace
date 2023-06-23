@@ -188,22 +188,15 @@ const Home = () => {
                         <em>“Variety of prices and locations at one place.”</em>
                       </p>
                       <p className="text-muted mb-4">
-                        Nunc tincidunt vulputate elit. Mauris varius purus malesuada
-                        neque iaculis malesuada. Aenean gravida magna orci, non
-                        efficitur est porta id. Donec magna diam.
+                        
+FlexSpace is a leading provider of flexible office space solutions. They offer a range of facilities and services to cater to the needs of businesses and professionals seeking flexible workspace options. With a strong presence in the commercial real estate market, FlexSpace provides versatile workspace solutions that can be customized to fit individual requirements.
                       </p>
                       <p className="text-muted">
-                        Ad, at blanditiis quaerat laborum officia incidunt cupiditate
-                        dignissimos voluptates eius aliquid minus praesentium!
-                        Perferendis et totam ipsum ex aut earum libero accusamus
-                        voluptas quod numquam saepe, consequuntur nihil quia tenetur
-                        consequatur. Quis, explicabo deserunt quasi assumenda ea maiores
-                        nulla, et dolor saepe praesentium natus error reiciendis
-                        voluptas iste. Esse, laudantium ipsum animi, quos voluptatibus
-                        atque vero repellat sit eligendi autem maiores quasi cum
-                        aperiam. Aperiam rerum culpa accusantium, ducimus deserunt
-                        aliquid alias vitae quasi corporis placeat vel maiores explicabo
-                        commodi!
+                      FlexSpace centers are located in prime locations, including major cities and strategic business districts. This ensures easy access to transportation hubs, amenities, and a vibrant business ecosystem. Their centers are equipped with modern amenities such as high-speed internet, comfortable furniture, state-of-the-art technology, and well-designed communal areas.
+
+In addition to providing workspace solutions, FlexSpace offers a range of business support services. These include reception and concierge services, mail handling, phone answering, IT support, and access to professional meeting and conference facilities. These services are designed to enhance business operations and create a seamless work experience.
+
+FlexSpace understands that business needs can change over time. Their flexible agreements allow businesses to scale their workspace up or down as required, ensuring cost optimization and adaptability. Furthermore, FlexSpace fosters a vibrant and collaborative community by hosting networking events, workshops, and social activities. This creates opportunities for professionals to connect, collaborate, and gain insights from like-minded individuals, fostering a supportive and inspiring work environment.
                       </p>
                     </div>
                   </div>
@@ -228,6 +221,7 @@ const Home = () => {
         {/* Service Section */}
         {/* <h1 className='srv'>SERVICES</h1> */}
         <div className="services">
+        <h1 className='cwr'>FACILITIES PROVIDED</h1>
           <div className="row row-cols-1 row-cols-md-4 g-3">
             <div className="col">
               <div className="card h-100">
@@ -237,10 +231,9 @@ const Home = () => {
                   alt="Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Flexible Workspace Options</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
+                  FlexSpace provides a range of workspace options, including coworking spaces, private offices, virtual offices, and meeting rooms, catering to the diverse needs of businesses and professionals.
                   </p>
                 </div>
               </div>
@@ -253,10 +246,9 @@ const Home = () => {
                   alt="Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Modern Amenities</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
+                  FlexSpace centers are equipped with modern amenities, such as high-speed internet, comfortable furniture, state-of-the-art technology, and well-designed communal areas, ensuring a productive and comfortable work environment.
                   </p>
                 </div>
               </div>
@@ -269,10 +261,9 @@ const Home = () => {
                   alt="Los Angeles Skyscrapers"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Business Support Services</h5>
                   <p className="card-text">
-                    This card has supporting text below as a natural lead-in to additional
-                    content.
+                  FlexSpace offers a range of business support services, including reception and concierge services, mail handling, phone answering, IT support, and access to professional meeting and conference facilities, streamlining business operations and enhancing productivity.
                   </p>
                 </div>
                 {/* <div className="card-footer">
@@ -288,11 +279,9 @@ const Home = () => {
                   alt="Palm Springs Road"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
+                  <h5 className="card-title">Prime Locations</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This card has even longer content than the
-                    first to show that equal height action.
+                  FlexSpace centers are strategically located in prime locations, ensuring easy access to transportation, amenities, and a thriving business environment.
                   </p>
                 </div>
 
@@ -349,14 +338,359 @@ const Home = () => {
         </div>
         {/* Gallery */}
 
+        <>
+  {/* Carousel wrapper */}
+  <div
+    id="carouselMultiItemExample"
+    className="carousel slide carousel-dark text-center"
+    data-mdb-ride="carousel"
+  >
+    {/* Controls */}
+    <div className="d-flex justify-content-center mb-4">
+      <button
+        className="carousel-control-prev position-relative"
+        type="button"
+        data-mdb-target="#carouselMultiItemExample"
+        data-mdb-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true" />
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next position-relative"
+        type="button"
+        data-mdb-target="#carouselMultiItemExample"
+        data-mdb-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true" />
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+    {/* Inner */}
+    <div className="carousel-inner py-4">
+      {/* Single item */}
+      <div className="carousel-item active">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://i.pinimg.com/564x/65/f8/97/65f897e47b9a8961d01f76492a20bae6.jpg"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Anna Deynah</h5>
+              <p>UX Designer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                The design of the website is so appealing and modern. It made me excited to explore different workspace options.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://i.pinimg.com/564x/f0/78/08/f078081db4493d676638e74a6e50793b.jpg"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">John Doe</h5>
+              <p>Enterpreneur</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Flexspace clearly communicated all the important details, like pricing, amenities, and cancellation policies. No surprises!
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star-half-alt fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://i.pinimg.com/736x/41/4f/f4/414ff41c6cba7aa12e9d9055ca57eb09.jpg"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Maria Kate</h5>
+              <p>Marketing Manager</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Contacting customer support was a breeze. The website had all the information I needed to get in touch.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="far fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Single item */}
+      <div className="carousel-item">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">John Doe</h5>
+              <p>UX Designer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                eos id officiis hic tenetur quae quaerat ad velit ab hic
+                tenetur.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Alex Rey</h5>
+              <p>Web Developer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid commodi.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star-half-alt fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Maria Kate</h5>
+              <p>Photographer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="far fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Single item */}
+      <div className="carousel-item">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Anna Deynah</h5>
+              <p>UX Designer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                eos id officiis hic tenetur quae quaerat ad velit ab hic
+                tenetur.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">John Doe</h5>
+              <p>Web Developer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam, nisi ut aliquid commodi.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star-half-alt fa-sm" />
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <img
+                className="rounded-circle shadow-1-strong mb-4"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp"
+                alt="avatar"
+                style={{ width: 150 }}
+              />
+              <h5 className="mb-3">Maria Kate</h5>
+              <p>Photographer</p>
+              <p className="text-muted">
+                <i className="fas fa-quote-left pe-2" />
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti.
+              </p>
+              <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="fas fa-star fa-sm" />
+                </li>
+                <li>
+                  <i className="far fa-star fa-sm" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Inner */}
+  </div>
+  {/* Carousel wrapper */}
+</>
+
+
         {/* <>
 <video className="vid" src={video} autoPlay loop muted />
   <h2 className='name'>FLEXSPACE</h2>
 </> */}
-        <>
+        {/* <> */}
           {/* First column */}
           {/* <div className="col-lg-6 mb-5 mb-lg-0"> */}
-            <div className="row">
+            {/* <div className="row">
               <div className="col-md-4">
                 <div className="leftside">
             <div
@@ -368,19 +702,19 @@ const Home = () => {
               className="card rounded-7 me-lg-n5"
             >
               <div className="card-body p-lg-5 shadow-5">
-                <form>
+                <form> */}
                   {/* Name input */}
-                  <div className="mb-4">
+                  {/* <div className="mb-4">
                     <input type="text" id="form4Example1" className="form-control" placeholder='Enter Name' />
 
-                  </div>
+                  </div> */}
                   {/* Email input */}
-                  <div className="mb-4">
+                  {/* <div className="mb-4">
                     <input type="email" id="form4Example2" className="form-control" placeholder='Enter email' />
 
-                  </div>
+                  </div> */}
                   {/* Message input */}
-                  <div className="mb-4">
+                  {/* <div className="mb-4">
                     <textarea
                       className="form-control"
                       id="form4Example3"
@@ -389,9 +723,9 @@ const Home = () => {
                       defaultValue={""}
                     />
 
-                  </div>
+                  </div> */}
                   {/* Checkbox */}
-                  <div className="form-check d-flex justify-content-center mb-4">
+                  {/* <div className="form-check d-flex justify-content-center mb-4">
                     <input
                       className="form-check-input me-2"
                       type="checkbox"
@@ -402,9 +736,9 @@ const Home = () => {
                     <label className="form-check-label" htmlFor="form4Example4">
                       Send me a copy of this message
                     </label>
-                  </div>
+                  </div> */}
                   {/* Submit button */}
-                  <button type="submit" className="btn btn-primary btn-block mb-4">
+                  {/* <button type="submit" className="btn btn-primary btn-block mb-4">
                     Send
                   </button>
                 </form>
@@ -412,12 +746,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* First column */}
 
 
           {/* <div className="col-lg-6 mb-5 mb-lg-0"> */}
-          <div className="col-md-4">
+          {/* <div className="col-md-4">
             <div className="rightside">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96813.17497894862!2d-73.97484803586903!3d40.68692922859912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1671718528728!5m2!1sen!2spl"
@@ -427,10 +761,10 @@ const Home = () => {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            />
+            /> */}
+          {/* </div>
           </div>
-          </div>
-        </>
+        </> */}
 
       </div>
     </div>
