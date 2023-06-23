@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dbName = 'FlexSpace';
 
-const url = 'mongodb+srv://madheshiyakajal:Kajal123@cluster0.upiopis.mongodb.net/mydatabase?retryWrites=true&w=majority';
+const url = 'mongodb+srv://madheshiyakajal:Kajal123@cluster0.upiopis.mongodb.net/FlexSpace?retryWrites=true&w=majority';
 
 mongoose.connect(url)
 .then((result) => {
