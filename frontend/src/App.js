@@ -6,7 +6,7 @@ import Main from './components/main';
 import Home from './components/main/Home';
 import Signup from './components/main/Signup';
 import Login from './components/main/Login';
-import About from './components/main/about';
+// import About from './components/main/about';
 import VendorSignUp from './components/main/VendorSignup';
 import VendorLogin from './components/main/VendorLogin';
 import Vendor from './components/vendor';
@@ -30,6 +30,7 @@ import CompareSpaces from './components/vendor/CompareSpaces';
 import Thankyoupage from './components/user/Thankyoupage';
 import UserAuth from './auth/UserAuth';
 import Feedback from './components/main/Feedback';
+import About from './components/main/About';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
