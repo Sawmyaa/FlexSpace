@@ -54,7 +54,7 @@ const About = () => {
       </div><br/><br/>
       <div className='contact' style={{background:"bluish"}}>
         <h2 className="common-heading text-center" style={{fontWeight: 600, color:"Blue"}}>Feels Free to Contact us</h2><br/><br/>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4650675136445!2d81.05642547456617!3d26.888731661122314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be209f58895a1%3A0x8328acaa3eddd4f!2z4Kas4Ka-4Kas4KeBIOCmrOCmqOCmvuCmsOCmuOCmvyDgpqbgpr7gprgg4KaH4KaJ4Kao4Ka_4Kat4Ka-4Kaw4KeN4Ka44Ka_4Kaf4Ka_!5e0!3m2!1sbn!2sin!4v1687538838304!5m2!1sbn!2sin" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.465067513645!2d81.0564254745662!3d26.8887316611223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be209f58895a1%3A0x8328acaa3eddd4f!2sBabu%20Banarasi%20Das%20University!5e0!3m2!1sen!2sin!4v1687697822876!5m2!1sen!2sin" 
         width="100%" height="350" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
  </iframe>
  <div className='container mt-0'style={{background:"whitesmoke", height:"100%", width:"70%"}}>
