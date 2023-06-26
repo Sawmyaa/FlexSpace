@@ -71,7 +71,7 @@ const Booking = () => {
     if (response.status === 200) {
       Swal.fire({
         title: "Success",
-        text: "Order Placed Successfully",
+        text: "Space Booked Successfully",
         icon: "success",
       })
       navigate("/user/managebooking");

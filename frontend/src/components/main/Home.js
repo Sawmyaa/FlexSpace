@@ -294,48 +294,7 @@ FlexSpace understands that business needs can change over time. Their flexible a
         </div>
 
 
-        {/* Gallery */}
-        <div className="city">
-          <div className="row">
-            <h1 className='cwr'>TOP COWORKING CITIES</h1>
-            <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/67/71/90/240_F_267719012_Kfn3ce4iMX5F69Hgk2zR8gzrOnyBOhjZ.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-              />
-              <img
-                src="https://t3.ftcdn.net/jpg/04/01/43/06/240_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape"
-              />
-            </div>
-            <div className="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src="https://i.pinimg.com/564x/e0/6a/e2/e06ae29ad41099ced40dc13352370cae.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds"
-              />
-              <img
-                src="https://t3.ftcdn.net/jpg/00/50/44/02/240_F_50440279_NjJDH4VfoKnV2jsgXAAonTgWtq5QXKdl.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-              />
-            </div>
-            <div className="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src="https://t3.ftcdn.net/jpg/04/76/78/86/240_F_476788612_cgmTI5EvXqrIR2eyj1yWmTHHUDz17v91.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea"
-              />
-              <img
-                src="https://t4.ftcdn.net/jpg/05/40/30/71/240_F_540307170_qg8R8Seug9NYJzL7FpbBuW5St0lIyAvv.jpg"
-                className="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park"
-              />
-            </div>
-          </div>
-        </div>
+
         {/* Gallery */}
 
         <>
