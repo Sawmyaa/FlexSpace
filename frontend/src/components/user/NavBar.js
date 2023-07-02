@@ -59,7 +59,7 @@ const NavBar = () => {
                         loading="lazy"
                     />
                     <h4 className='text-white'>
-                        OFFICE SPACE
+                       FlexSpace
                     </h4>
 
                     <button

@@ -26,11 +26,11 @@ import VendorAuth from './auth/VendorAuth';
 import ManageSpace from './components/vendor/ManageSpace';
 import Booking from './components/user/Booking';
 import SpaceDetails from './components/main/SpaceDetails';
-import CompareSpaces from './components/vendor/CompareSpaces';
 import Thankyoupage from './components/user/Thankyoupage';
 import UserAuth from './auth/UserAuth';
 import Feedback from './components/main/Feedback';
 import About from './components/main/About';
+import CompareSpaces from './components/vendor/CompareSpaces';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
@@ -54,7 +54,7 @@ function App() {
                   <Route path="browseSpace" element={<BrowseSpace />} />
                   <Route path="browseSpace/:location/:price" element={<BrowseSpace />} />
                   <Route path="spacedetails/:spaceid" element={<SpaceDetails />} />
-                  <Route path="compare" element={<CompareSpaces />} />
+                  // <Route path="compare" element={<CompareSpaces />} />
                   <Route path="ASignUp" element={<ASignUp />} />
                   <Route path="ALogin" element={<ALogin />} />
                   <Route path="feedback" element={ <UserAuth> <Feedback /> </UserAuth>} />
@@ -72,6 +72,7 @@ function App() {
                   <Route path="add_space" element={<AddSpace />} />
                   <Route path="manage_space" element={<ManageSpace />} />
                   <Route path="updateData/:id" element={<UpdateData />} />
+                  <Route path="CompareSpaces" element={<CompareSpaces />} />
                 </Route>
 
                 <Route

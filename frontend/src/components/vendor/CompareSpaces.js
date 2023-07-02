@@ -84,7 +84,7 @@ const CompareSpaces = () => {
     <div>
       <header>
         <div className="container py-5">
-          <p className="display-4 text-center fw-bold">Compare Office Spaces</p>
+          <p className="display-4 text-center  mt-4 fw-bold">Compare Office Spaces</p>
         </div>
       </header>
       <hr />
