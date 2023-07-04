@@ -46,6 +46,11 @@ const Navbar = () => {
                   Browse Office Space
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/vendor/CompareSpaces">
+                  Compare Spaces
+                </NavLink>
+              </li>
             </ul>
             <ul className="navbar-nav ms-auto">
               <NavLink className="spacebtn btn btn-primary btn-rounded" to="/vendor/add_space">
